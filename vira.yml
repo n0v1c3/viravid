@@ -1,0 +1,692 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/mike/vira
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 115
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 26
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 1
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: solid
+    # title: Terminalizer
+    style: []
+      # border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  # fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  fontFamily: "Source Code Pro"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 667
+    content: "total 32K\r\n-rw-r--r-- 1 mike mike 32K Jun 26 16:45 \e[0m\e[00mvira.yml\e[0m\r\ntotal 32K\r\n-rw-r--r-- 1 mike mike 32K Jun 26 16:45 \e[0m\e[00mvira.yml\e[0m\r\n"
+  - delay: 17
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                  \r \r"
+  - delay: 60
+    content: "\ek~/vira\e\\"
+  - delay: 5
+    content: "\r\e[0m\e[27m\e[24m\e[J╭─\e[32mmike\e[39m\e[36m@\e[32mxps\e[39m \e[1m\e[34m~/vira\e[39m\e[0m  \r\n╰─\e[39m➤ \e[39m \e[K\e[?1h\e=\e[?2004h"
+  - delay: 595
+    content: "\e[4mv\e[24m"
+  - delay: 85
+    content: "\b\e[24m\e[32mv\e[32mi\e[39m"
+  - delay: 176
+    content: "\b\b\e[32mv\e[32mi\e[32mm\e[39m"
+  - delay: 223
+    content: "\e[?1l\e>\e[?2004l\r\r\n\ekvim\e\\"
+  - delay: 303
+    content: "\e[?1049h\e[?1h\e="
+  - delay: 36
+    content: "\e[1;26r\e[27m\e[24m\e[23m\e[0m\e[94m\e[H\e[J"
+  - delay: 326
+    content: "\e[?25l\e[1;1H\e[92m\e[40m1   \e[0m\e[94m\r\n\e[93m~                                                                                                                  \e[3;1H~                                                                                                                  \e[4;1H~                                                                                                                  \e[5;1H~                                                                                                                  \e[6;1H~                                                                                                                  \e[7;1H~                                                                                                                  \e[8;1H~                                                                                                                  \e[9;1H~                                                                                                                  \e[10;1H~                                                                                                                  \e[11;1H~                                                                                                                  \e[12;1H~                                                                                                                  \e[13;1H~                                                                                                                  \e[14;1H~                                                                                                                  \e[15;1H~                                                                                                                  \e[16;1H~                                                                                                                  \e[17;1H~                                                                                                                  \e[18;1H~                                                                                                                  \e[19;1H~                                                                                                                  \e[20;1H~                                                                                                                  \e[21;1H~                                                                                                                  \e[22;1H~                                                                                                                  \e[23;1H~                                                                                                                  \e[24;1H~                                                                                                                  "
+  - delay: 34
+    content: "\e[0m\e[94m\e[25;1H\e[38;5;17m\e[48;5;190m None \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;8H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;9H\e[38;5;85m\e[48;5;234m /home/mike/vira/                                                       \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;82H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;83H\e[38;5;255m\e[48;5;238m [unix] \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;92H\e[38;5;17m\e[48;5;190m 100% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    0/1 \e[0m\e[94m\e[25;108H\e[38;5;17m\e[48;5;190m :  1 \e[0m\e[94m\e[38;5;166m\e[48;5;190m\e[0m\e[94m\e[25;115H\e[38;5;160m\e[48;5;166m\e[0m\e[94m\e[7;50HVIM - Vi IMproved\e[9;51Hversion 8.2.814\e[10;46Hby Bram Moolenaar et al.\e[11;37HVim is open source and freely distributable\e[13;44HHelp poor children in Uganda!\e[14;35Htype  :help iccf\e[93m\e[40m<Enter>\e[0m\e[94m       for information \e[16;35Htype  :q\e[93m\e[40m<Enter>\e[0m\e[94m               to exit         \e[17;35Htype  :help\e[93m\e[40m<Enter>\e[0m\e[94m  or  \e[93m\e[40m<F1>\e[0m\e[94m  for on-line help\e[18;35Htype  :help version8\e[93m\e[40m<Enter>\e[0m\e[94m   for version info\e]0;[No Name] - VIM\a\e[1;5H\e[34h\e[?25h"
+  - delay: 1480
+    content: "\e[?25l\e[26;1H:\e[34h\e[?25h"
+  - delay: 232
+    content: v
+  - delay: 56
+    content: i
+  - delay: 504
+    content: r
+  - delay: 152
+    content: a
+  - delay: 343
+    content: s
+  - delay: 72
+    content: e
+  - delay: 217
+    content: "...\e[?25l\r:ViraServers...\r:viras\e[26;8H\e[K\e[26;8H\e[25;1H\e[1m\e[7m\e[96m\e[40mViraServers  ViraSetAssignee  ViraSetComponent  ViraSetPriority  ViraSetStatus  ViraSetType  ViraSetVersion        \e[0m\e[94m\e[26;8H...\e[25;1H\e[1m\e[7m\e[37m\e[40mViraServers\e[0m\e[94m\r\n:ViraServers\e[34h\e[?25h"
+  - delay: 546
+    content: "\e[25;1H\e[38;5;17m\e[48;5;40m None \e[0m\e[94m\e[38;5;40m\e[48;5;238m\e[0m\e[94m\e[25;8H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;9H\e[38;5;85m\e[48;5;234m /home/mike/vira/                                                       \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;82H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;83H\e[38;5;255m\e[48;5;238m [unix] \e[0m\e[94m\e[38;5;40m\e[48;5;238m\e[0m\e[94m\e[25;92H\e[38;5;17m\e[48;5;40m 100% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;40m☰    0/1 \e[0m\e[94m\e[25;108H\e[38;5;17m\e[48;5;40m :  1 \e[0m\e[94m\e[38;5;166m\e[48;5;40m\e[0m\e[94m\e[25;115H\e[38;5;160m\e[48;5;166m\e[26;1H"
+  - delay: 444
+    content: "\e[?25l\e[0m\e[94mConnection to jira server was successful"
+  - delay: 52
+    content: "\e[7;50H\e[93m                 \e[9;51H               \e[10;46H                        \e[11;37H                                           \e[13;44H                             \e[14;35H                                              \e[16;35H                                              \e[0m\e[94m\r\n\e[38;5;239m\e[48;5;236m /home/mike/vira/                                                                 \e[0m\e[94m\e[38;5;236m\e[48;5;236m\e[0m\e[94m\e[17;84H\e[38;5;235m\e[48;5;236m\e[0m\e[94m\e[17;85H\e[38;5;239m\e[48;5;235m [unix] \e[0m\e[94m\e[38;5;234m\e[48;5;235m\e[0m\e[94m\e[17;94H\e[38;5;239m\e[48;5;234m 100% ☰    0/1 \e[17;110H :  1 \e[0m\e[94m\e[18;1H\e[92m\e[40m  1 \e[0m\e[94m\e[18;5H\e[K\e[25;1H\e[38;5;17m\e[48;5;190m None \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;26H\e[38;5;85m\e[48;5;234mvira_menu\e[0m\e[94m\e[35C\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;72H\e[38;5;85m\e[48;5;234mvira_menu \e[0m\e[94m\e[9C\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;92H\e[38;5;17m\e[48;5;190m 100% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    0/1 \e[0m\e[94m\e[25;108H\e[38;5;17m\e[48;5;190m :  1 \e[0m\e[94m\e[38;5;166m\e[48;5;190m\e]0;vira_menu (~/vira) - VIM\a"
+  - delay: 22
+    content: "\a\e[0m\e[94m\e[19;1H\e[92m\e[40m  2 \e[0m\e[94m\e[19;5H\e[K\e[20;1H\e[92m\e[40m  3 \e[0m\e[94m\e[91mhttps://jira.boiko.ca\e[0m\e[94m\e[20;26H\e[K\e[21;1H\e[92m\e[40m  4 \e[0m\e[94m\e[91mhttps://jira.tgall.ca\e[0m\e[94m\e[21;26H\e[K\e[22;1H\e[92m\e[40m  5 \e[0m\e[94m\e[91mhttps://n0v1c3.atlassian.net\e[0m\e[94m\e[22;33H\e[K\e[25;103H\e[1m\e[38;5;17m\e[48;5;190m5/5\e[0m\e[94m\e[5C\e[38;5;17m\e[48;5;190m28\e[0m\e[94m\e[26;1H\e[K"
+  - delay: 7
+    content: "\e[18;5H\e[91mhttps://jira.boiko.ca\e[19;5Hhttps://jira.tgall.ca\e[20;13Hn0v1c3.atlassian.net\e[0m\e[94m\r\n\e[93m~                                                                                                                  \e[22;1H~                                                                                                                  \e[0m\e[94m\e[25;93H\e[38;5;17m\e[48;5;190m 33\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m1/3\e[0m\e[94m\e[5C\e[38;5;17m\e[48;5;190m 1\e[18;5H\e[34h\e[?25h"
+  - delay: 850
+    content: "\e[25;94H66\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m2\e[19;5H"
+  - delay: 581
+    content: "\e[?25l\e[0m\e[94m\e[26;1HConnection to jira server was successful"
+  - delay: 11
+    content: "\e[34h\e[?25h\e[?25l\e[34h\e[?25h\e[?25l\e[26;1H\e[K"
+  - delay: 11
+    content: "\e[17;1H\e[93m~                                                                                                                  \e[18;1H~                                                                                                                  \e[19;1H~                                                                                                                  \e[20;1H~                                                                                                                  \e[0m\e[94m\e[25;26H\e[38;5;85m\e[48;5;234m         \e[35C           \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;93H\e[38;5;17m\e[48;5;190m100\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m0/1\e]0;[No Name] - VIM\a\e[1;5H\e[34h\e[?25h"
+  - delay: 882
+    content: "\e[?25l\e[26;1H\e[0m\e[94m:\e[34h\e[?25h"
+  - delay: 591
+    content: v
+  - delay: 113
+    content: i
+  - delay: 144
+    content: r
+  - delay: 144
+    content: a
+  - delay: 344
+    content: i
+  - delay: 103
+    content: s
+  - delay: 137
+    content: s
+  - delay: 200
+    content: "...\e[?25l\r:ViraIssue\e[26;11H\e[K\e[26;11H...\r:virai\e[26;9H\e[K\e[26;9H\e[25;1H\e[1m\e[7m\e[96m\e[40mViraIssue  ViraIssues                                                                                              \e[0m\e[94m\e[26;9H...\e[25;1H\e[1m\e[7m\e[37m\e[40mViraIssue\e[0m\e[94m\r\n:ViraIssue\e[26;11H\e[K\e[26;11H\e[34h\e[?25h"
+  - delay: 666
+    content: "\e[25;1H\e[38;5;17m\e[48;5;40m None \e[0m\e[94m\e[38;5;40m\e[48;5;238m\e[0m\e[94m\e[25;8H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;9H\e[38;5;85m\e[48;5;234m /home/mike/vira/                                                       \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;82H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;83H\e[38;5;255m\e[48;5;238m [unix] \e[0m\e[94m\e[38;5;40m\e[48;5;238m\e[0m\e[94m\e[25;92H\e[38;5;17m\e[48;5;40m 100% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;40m☰    0/1 \e[0m\e[94m\e[25;108H\e[38;5;17m\e[48;5;40m :  1 \e[0m\e[94m\e[38;5;166m\e[48;5;40m\e[0m\e[94m\e[25;115H\e[38;5;160m\e[48;5;166m\e[26;1H"
+  - delay: 271
+    content: "\e[?25l"
+  - delay: 10
+    content: "\e[0m\e[94m\"vira_prompt\" 24L, 715C"
+  - delay: 77
+    content: "\e[1;1H\e[92m\e[40m  5\r\n  4 \e[0m\e[94m[*Project*] \e[2;17H\e[K\e[3;1H\e[92m\e[40m  3 \e[0m\e[94m[*\e[4mIssueType\e[24m\e[94m*] Task\e[3;23H\e[K\e[4;1H\e[92m\e[40m  2 \e[0m\e[94m[Status] \e[4;14H\e[K\e[5;1H\e[92m\e[40m  1 \e[0m\e[94m[Priority] \e[5;16H\e[K\e[6;1H\e[92m\e[40m8   \e[0m\e[94m\e[31m\e[102m[\e[0m\e[94mComponent\e[31m\e[102m]\e[0m\e[94m \e[6;17H\e[K\e[7;1H\e[92m\e[40m  1 \e[0m\e[94m[Version] \e[7;15H\e[K\e[8;1H\e[92m\e[40m  2 \e[0m\e[94m[Assignee] \e[8;16H\e[K\e[9;1H\e[92m\e[40m  3 \e[0m\e[94m\e[9;5H\e[K\e[10;1H\e[92m\e[40m  4 \e[0m\e[94m# -------------------------------------\e[10;44H\e[K\e[11;1H\e[92m\e[40m  5 \e[0m\e[94m# Please enter text above this line\e[11;40H\e[K\e[12;1H\e[92m\e[40m  6 \e[0m\e[94m# An empty message will abort the operation.\e[12;49H\e[K\e[13;1H\e[38;5;17m\e[48;5;190m None \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;8H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;9H\e[38;5;85m\e[48;5;234m /tmp/vira_prompt                                     \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[13;64H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;65H\e[38;5;255m\e[48;5;238m utf-8[unix] \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;79H\e[38;5;17m\e[48;5;190m  33% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    8/24 \e[0m\e[94m\e[13;96H\e[38;5;17m\e[48;5;190m :  1 \e[0m\e[94m\e[38;5;166m\e[48;5;190m\e[0m\e[94m\e[13;103H\e[38;5;232m\e[48;5;166m ☲ [8]trai…\e[13;114H \e[0m\e[94m\e[38;5;160m\e[48;5;166m\e[0m\e[94m\e[14;1H\e[92m\e[40m1   \e[0m\e[94m\e[14;5H\e[K\e[25;1H\e[38;5;239m\e[48;5;236m /tmp/                                                                            \e[0m\e[94m\e[38;5;236m\e[48;5;236m\e[0m\e[94m\e[25;84H\e[38;5;235m\e[48;5;236m\e[0m\e[94m\e[25;85H\e[38;5;239m\e[48;5;235m [unix] \e[0m\e[94m\e[38;5;234m\e[48;5;235m\e[0m\e[94m\e[25;94H\e[38;5;239m\e[48;5;234m 100% ☰    0/1 \e[25;110H :  1 \e]0;vira_prompt (/tmp) - VIM\a\e[6;5H\e[34h\e[?25h"
+  - delay: 383
+    content: "\e[?25l\e[1;12r\e[0m\e[94m\e[1;1H\e[L\e[1;26r\e[1;1H\e[92m\e[40m  5 \e[0m\e[94m[Description]\e[2;3H\e[92m\e[40m4\r\n  3\r\n  2\r\n  1\r\n7  \e[0m\e[94m\e[1C\e[31m\e[102m[\e[8C]\e[0m\e[94m\r\n\e[92m\e[40m  1\e[0m\e[94m\e[1C[\e[9C]\e[8;3H\e[92m\e[40m2\r\n  3\r\n  4\r\n  5\r\n  6\e[0m\e[94m\e[26;1H\e[K\e[13;81H\e[38;5;17m\e[48;5;190m29\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m7\e[6;5H\e[34h\e[?25h"
+  - delay: 168
+    content: "\e[?25l\e[1;12r\e[0m\e[94m\e[1;1H\e[L\e[1;26r\e[1;1H\e[92m\e[40m  5 \e[0m\e[94m[*Summary*]\e[2;3H\e[92m\e[40m4\r\n  3\r\n  2\r\n  1\r\n6  \e[0m\e[94m\e[1C\e[31m\e[102m[\e[0m\e[94mStatus\e[31m\e[102m]\e[0m\e[94m\r\n\e[92m\e[40m  1\e[0m\e[94m\e[1C[\e[8C]\e[8;3H\e[92m\e[40m2\r\n  3\r\n  4\r\n  5\r\n  6\e[0m\e[94m\e[13;82H\e[38;5;17m\e[48;5;190m5\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m6\e[6;5H\e[34h\e[?25h"
+  - delay: 391
+    content: "\e[?25l\e[0m\e[94m\e[1;1H\e[92m\e[40m1  \e[0m\e[94m\e[1C\e[31m\e[102m[\e[9C]\e[0m\e[94m\e[2;3H\e[92m\e[40m1\r\n  2\r\n  3\r\n  4\r\n  5\e[0m\e[94m\e[1C[Status]\e[7;3H\e[92m\e[40m6\r\n  7\r\n  8\r\n  9\r\n 10\r\n 11\e[0m\e[94m\e[13;81H\e[38;5;17m\e[48;5;190m 4\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m1\e[1;5H\e[34h\e[?25h"
+  - delay: 357
+    content: "\e[?25l\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[13;1H\e[38;5;17m\e[48;5;45m None \e[0m\e[94m\e[38;5;45m\e[48;5;27m\e[0m\e[94m\e[13;8H\e[38;5;27m\e[48;5;17m\e[0m\e[94m\e[13;9H\e[97m\e[48;5;17m /tmp/vira_prompt                                     \e[0m\e[94m\e[38;5;17m\e[48;5;17m\e[0m\e[94m\e[13;64H\e[38;5;27m\e[48;5;17m\e[0m\e[94m\e[13;65H\e[38;5;255m\e[48;5;27m utf-8[unix] \e[0m\e[94m\e[38;5;45m\e[48;5;27m\e[0m\e[94m\e[13;79H\e[38;5;17m\e[48;5;45m   4% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;45m☰    1/24 \e[0m\e[94m\e[13;96H\e[38;5;17m\e[48;5;45m : 12 \e[0m\e[94m\e[38;5;166m\e[48;5;45m\e[1;16H\e[34h\e[?25h"
+  - delay: 302
+    content: "\e[?25l\e[0m\e[94m\e[1;5H[\e[9C]\e[13;8H\e[38;5;27m\e[48;5;53m\e[0m\e[94m\e[13;9H\e[38;5;255m\e[48;5;53m /tmp/vira_prompt[+]                                  \e[0m\e[94m\e[38;5;17m\e[48;5;53m\e[0m\e[94m\e[13;100H\e[38;5;17m\e[48;5;45m3\e]0;vira_prompt + (/tmp) - VIM\a\e[1;17H\e[34h\e[?25h"
+  - delay: 178
+    content: "\e[?25l\e[0m\e[94mV\e[13;100H\e[38;5;17m\e[48;5;45m4\e[1;18H\e[34h\e[?25h"
+  - delay: 156
+    content: "\e[?25l\e[0m\e[94mi\e[13;100H\e[38;5;17m\e[48;5;45m5\e[1;19H\e[34h\e[?25h"
+  - delay: 25
+    content: "\e[?25l\e[0m\e[94m\e[2;16H\e[1m\e[7m\e[94m\e[40m Version  [B]   \e[3;16H Versions [B]   \e[1;19H\e[34h\e[?25h"
+  - delay: 8
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[1;19H\e[?25l\e[2;18H\e[K\e[3;16H\e[K\e[13;100H\e[38;5;17m\e[48;5;45m3\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[2;16H\e[1m\e[7m\e[94m\e[40m Version  [B]   \e[3;16H Versions [B]   \e[1;19H\e[34h\e[?25h"
+  - delay: 87
+    content: "\e[?25l\e[0m\e[94mr\e[2;18H\e[K\e[3;16H\e[K\e[2;16H\e[1m\e[7m\e[94m\e[40m Version  [B]   \e[3;16H Versions [B]   \e[1;20H\e[34h\e[?25h"
+  - delay: 10
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[1;20H\e[?25l\e[2;16Hn]\e[2;18H\e[K\e[3;16H\e[K\e[13;100H\e[38;5;17m\e[48;5;45m6\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[1;20H\e[34h\e[?25h"
+  - delay: 65
+    content: "\e[?25l\e[0m\e[94m\e[26;1H\e[K\e[1;20Ha\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[13;100H\e[38;5;17m\e[48;5;45m7\e[1;21H\e[34h\e[?25h"
+  - delay: 424
+    content: "\e[?25l\e[13;100H8\e[1;22H\e[34h\e[?25h"
+  - delay: 128
+    content: "\e[?25l\e[0m\e[94ms\e[13;100H\e[38;5;17m\e[48;5;45m9\e[1;23H\e[34h\e[?25h"
+  - delay: 102
+    content: "\e[?25l\e[0m\e[94mh\e[13;99H\e[38;5;17m\e[48;5;45m20\e[1;24H\e[34h\e[?25h"
+  - delay: 65
+    content: "\e[?25l\e[0m\e[94mo\e[13;100H\e[38;5;17m\e[48;5;45m1\e[1;25H\e[34h\e[?25h"
+  - delay: 56
+    content: "\e[?25l\e[0m\e[94mw\e[13;100H\e[38;5;17m\e[48;5;45m2\e[1;26H\e[34h\e[?25h"
+  - delay: 193
+    content: "\e[?25l\e[0m\e[94mc\e[13;100H\e[38;5;17m\e[48;5;45m3\e[1;27H\e[34h\e[?25h"
+  - delay: 119
+    content: "\e[?25l\e[0m\e[94ma\e[13;100H\e[38;5;17m\e[48;5;45m4\e[1;28H\e[34h\e[?25h"
+  - delay: 178
+    content: "\e[?25l\e[0m\e[94ms\e[13;100H\e[38;5;17m\e[48;5;45m5\e[1;29H\e[34h\e[?25h"
+  - delay: 55
+    content: "\e[?25l\e[0m\e[94me\e[13;100H\e[38;5;17m\e[48;5;45m6\e[1;30H\e[34h\e[?25h"
+  - delay: 278
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[1;29H\e[?25l"
+  - delay: 20
+    content: "\e[13;1H\e[38;5;17m\e[48;5;190m None \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;8H\e[38;5;238m\e[48;5;53m\e[0m\e[94m\e[13;63H\e[38;5;234m\e[48;5;53m\e[0m\e[94m\e[13;64H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;65H\e[38;5;255m\e[48;5;238m utf-8[unix] \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;79H\e[38;5;17m\e[48;5;190m   4% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    1/24 \e[0m\e[94m\e[13;96H\e[38;5;17m\e[48;5;190m : 25 \e[0m\e[94m\e[38;5;166m\e[48;5;190m\e[1;29H\e[34h\e[?25h\e[?25l\e[34h\e[?25h"
+  - delay: 181
+    content: "\e[?25l\e[0m\e[94m\r\e[92m\e[40m  1\r\n2  \r\n  1\r\n  2\r\n  3\r\n  4\r\n  5\r\n  6\r\n  7\r\n  8\r\n  9\r\n 10\e[0m\e[94m\e[13;82H\e[38;5;17m\e[48;5;190m8\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m2\e[2;29H\e[34h\e[?25h"
+  - delay: 203
+    content: "\e[?25l\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[1;3H\e[92m\e[40m2\r\n  1\r\n3  \r\n  1\e[0m\e[94m\e[4;5H\e[K\e[5;3H\e[92m\e[40m2\e[0m\e[94m\e[3CProject*] \e[5;17H\e[K\e[6;3H\e[92m\e[40m3\e[0m\e[94m\e[2C*\e[4mIssueType\e[24m\e[94m*] Task\e[7;3H\e[92m\e[40m4\e[0m\e[94m\e[2CStatus] \e[7;14H\e[K\e[8;3H\e[92m\e[40m5\e[0m\e[94m\e[2CPriority] \e[9;3H\e[92m\e[40m6\e[0m\e[94m\e[2CComponent]\e[10;3H\e[92m\e[40m7\e[0m\e[94m\e[2CVersion] \e[11;3H\e[92m\e[40m8\e[0m\e[94m\e[1C[Assignee]\e[12;2H\e[92m\e[40m 9\e[0m\e[94m\e[12;5H\e[K\e[13;1H\e[38;5;17m\e[48;5;45m None \e[0m\e[94m\e[38;5;45m\e[48;5;27m\e[0m\e[94m\e[13;8H\e[38;5;27m\e[48;5;53m\e[0m\e[94m\e[13;63H\e[38;5;17m\e[48;5;53m\e[0m\e[94m\e[13;64H\e[38;5;27m\e[48;5;17m\e[0m\e[94m\e[13;65H\e[38;5;255m\e[48;5;27m utf-8[unix] \e[0m\e[94m\e[38;5;45m\e[48;5;27m\e[0m\e[94m\e[13;79H\e[38;5;17m\e[48;5;45m  12% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;45m☰    3/25 \e[0m\e[94m\e[13;96H\e[38;5;17m\e[48;5;45m :  1 \e[0m\e[94m\e[38;5;166m\e[48;5;45m\e[3;5H\e[34h\e[?25h"
+  - delay: 461
+    content: "\e[?25l\e[0m\e[94mh\e[13;100H\e[38;5;17m\e[48;5;45m2\e[3;6H\e[34h\e[?25h"
+  - delay: 136
+    content: "\e[?25l\e[0m\e[94me\e[13;100H\e[38;5;17m\e[48;5;45m3\e[3;7H\e[34h\e[?25h"
+  - delay: 30
+    content: "\e[?25l\e[0m\e[94m\e[4;4H\e[1m\e[7m\e[94m\e[40m showcase [B]   \e[5;4H the      [B]   \e[6;4H Highest  [B]   \e[3;7H\e[34h\e[?25h"
+  - delay: 7
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[3;7H\e[?25l\e[4;5H\e[K\e[5;17H\e[K\e[13;100H\e[38;5;17m\e[48;5;45m1\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[4;4H\e[1m\e[7m\e[94m\e[40m showcase [B]   \e[5;4H the      [B]   \e[6;4H Highest  [B]   \e[3;7H\e[34h\e[?25h"
+  - delay: 51
+    content: "\e[?25l\e[0m\e[94ml\e[4;5H\e[K\e[5;17H\e[K\e[4;4H\e[1m\e[7m\e[94m\e[40m showcase [B]   \e[5;4H the      [B]   \e[6;4H Highest  [B]   \e[3;8H\e[34h\e[?25h"
+  - delay: 9
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[3;8H\e[?25l\e[4;4H\e[92m\e[40m \e[0m\e[94m\e[4;5H\e[K\e[5;4H\e[92m\e[40m \e[0m\e[94m[*Project*] \e[5;17H\e[K\e[6;4H\e[92m\e[40m \e[0m\e[94m[*\e[4mIssueType\e[24m\e[94m*] T\e[13;100H\e[38;5;17m\e[48;5;45m4\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[3;8H\e[34h\e[?25h"
+  - delay: 92
+    content: "\e[?25l\e[0m\e[94m\e[26;1H\e[K\e[3;8Hl\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[13;100H\e[38;5;17m\e[48;5;45m5\e[3;9H\e[34h\e[?25h"
+  - delay: 176
+    content: "\e[?25l\e[0m\e[94mo\e[13;100H\e[38;5;17m\e[48;5;45m6\e[3;10H\e[34h\e[?25h"
+  - delay: 247
+    content: "\e[?25l\e[13;100H7\e[3;11H\e[34h\e[?25h"
+  - delay: 201
+    content: "\e[?25l\e[0m\e[94mw\e[13;100H\e[38;5;17m\e[48;5;45m8\e[3;12H\e[34h\e[?25h"
+  - delay: 87
+    content: "\e[?25l\e[0m\e[94mo\e[13;100H\e[38;5;17m\e[48;5;45m9\e[3;13H\e[34h\e[?25h"
+  - delay: 120
+    content: "\e[?25l\e[0m\e[94mr\e[13;99H\e[38;5;17m\e[48;5;45m10\e[3;14H\e[34h\e[?25h"
+  - delay: 177
+    content: "\e[?25l\e[0m\e[94ml\e[13;100H\e[38;5;17m\e[48;5;45m1\e[3;15H\e[34h\e[?25h"
+  - delay: 128
+    content: "\e[?25l\e[0m\e[94md\e[13;100H\e[38;5;17m\e[48;5;45m2\e[3;16H\e[34h\e[?25h"
+  - delay: 326
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[3;15H\e[?25l"
+  - delay: 17
+    content: "\e[13;1H\e[38;5;17m\e[48;5;190m None \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;8H\e[38;5;238m\e[48;5;53m\e[0m\e[94m\e[13;63H\e[38;5;234m\e[48;5;53m\e[0m\e[94m\e[13;64H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;65H\e[38;5;255m\e[48;5;238m utf-8[unix] \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;79H\e[38;5;17m\e[48;5;190m  12% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    3/25 \e[0m\e[94m\e[13;96H\e[38;5;17m\e[48;5;190m : 11 \e[0m\e[94m\e[38;5;166m\e[48;5;190m\e[3;15H\e[34h\e[?25h\e[?25l\e[34h\e[?25h"
+  - delay: 247
+    content: "\e[?25l\e[0m\e[94m\e[1;3H\e[92m\e[40m3\r\n  2\r\n  1\r\n4  \r\n  1\r\n  2\r\n  3\r\n  4\r\n  5\r\n  6\r\n  7\r\n  8\e[0m\e[94m\e[13;82H\e[38;5;17m\e[48;5;190m6\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m4\e[4;15H\e[34h\e[?25h"
+  - delay: 240
+    content: "\e[?25l\e[0m\e[94m\e[1;3H\e[92m\e[40m4\r\n  3\r\n  2\r\n  1\r\n5  \e[0m\e[94m\e[1C\e[31m\e[102m[\e[9C]\e[0m\e[94m\e[6;3H\e[92m\e[40m1\r\n  2\r\n  3\r\n  4\r\n  5\r\n  6\r\n  7\e[0m\e[94m\e[13;81H\e[38;5;17m\e[48;5;190m20\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m5\e[5;15H\e[34h\e[?25h"
+  - delay: 480
+    content: "\e[?25l\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[5;5H[\e[9C]\e[13;1H\e[38;5;17m\e[48;5;45m None \e[0m\e[94m\e[38;5;45m\e[48;5;27m\e[0m\e[94m\e[13;8H\e[38;5;27m\e[48;5;53m\e[0m\e[94m\e[13;63H\e[38;5;17m\e[48;5;53m\e[0m\e[94m\e[13;64H\e[38;5;27m\e[48;5;17m\e[0m\e[94m\e[13;65H\e[38;5;255m\e[48;5;27m utf-8[unix] \e[0m\e[94m\e[38;5;45m\e[48;5;27m\e[0m\e[94m\e[13;79H\e[38;5;17m\e[48;5;45m  20% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;45m☰    5/25 \e[0m\e[94m\e[13;96H\e[38;5;17m\e[48;5;45m : 13 \e[0m\e[94m\e[38;5;166m\e[48;5;45m\e[5;17H\e[34h\e[?25h"
+  - delay: 186
+    content: "\e[?25l\e[0m\e[94m\e[13;100H\e[38;5;17m\e[48;5;45m4\e[5;18H\e[34h\e[?25h"
+  - delay: 2695
+    content: "\e[?25l\e[13;100H3\e[5;17H\e[34h\e[?25h"
+  - delay: 248
+    content: "\e[?25l\e[0m\e[94mV\e[13;100H\e[38;5;17m\e[48;5;45m4\e[5;18H\e[34h\e[?25h"
+  - delay: 96
+    content: "\e[?25l\e[0m\e[94mI\e[13;100H\e[38;5;17m\e[48;5;45m5\e[5;19H\e[34h\e[?25h"
+  - delay: 23
+    content: "\e[?25l\e[0m\e[94m\e[6;16H\e[1m\e[7m\e[94m\e[40m VIM  [B]       \e[7;16H VIRA [B]       \e[5;19H\e[34h\e[?25h"
+  - delay: 8
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[5;19H\e[?25l\e[6;23H\e[K\e[7;16H\e[K\e[13;100H\e[38;5;17m\e[48;5;45m3\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[6;16H\e[1m\e[7m\e[94m\e[40m VIM  [B]       \e[7;16H VIRA [B]       \e[5;19H\e[34h\e[?25h"
+  - delay: 105
+    content: "\e[?25l\e[0m\e[94mR\e[6;23H\e[K\e[7;16H\e[K\e[6;16H\e[1m\e[7m\e[94m\e[40m VIM  [B]       \e[7;16H VIRA [B]       \e[5;20H\e[34h\e[?25h"
+  - delay: 8
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[5;20H\e[?25l\e[6;16H*] Task\e[6;23H\e[K\e[7;16H\e[K\e[13;100H\e[38;5;17m\e[48;5;45m6\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[5;20H\e[34h\e[?25h"
+  - delay: 12
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[5;20H\e[?25l\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[6;16H\e[1m\e[7m\e[94m\e[40m VIRA [B]       \e[5;20H\e[34h\e[?25h"
+  - delay: 72
+    content: "\e[?25l\e[0m\e[94mA\e[6;23H\e[K\e[13;100H\e[38;5;17m\e[48;5;45m3\e[0m\e[94m\e[6;16H\e[1m\e[7m\e[94m\e[40m VIRA [B]       \e[5;21H\e[34h\e[?25h"
+  - delay: 7
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[5;21H\e[?25l\e[6;16H*] Task\e[6;23H\e[K\e[13;100H\e[38;5;17m\e[48;5;45m7\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[5;21H\e[34h\e[?25h"
+  - delay: 14
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[5;21H\e[?25l\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[6;16H\e[1m\e[7m\e[94m\e[40m VIRA [B]       \e[5;21H\e[34h\e[?25h"
+  - delay: 356
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[5;20H\e[?25l\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[26;1H\e[K"
+  - delay: 16
+    content: "\e[6;16H*] Task\e[6;23H\e[K\e[13;1H\e[38;5;17m\e[48;5;190m None \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;8H\e[38;5;238m\e[48;5;53m\e[0m\e[94m\e[13;63H\e[38;5;234m\e[48;5;53m\e[0m\e[94m\e[13;64H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;65H\e[38;5;255m\e[48;5;238m utf-8[unix] \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;79H\e[38;5;17m\e[48;5;190m  20% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    5/25 \e[0m\e[94m\e[13;96H\e[38;5;17m\e[48;5;190m : 16 \e[0m\e[94m\e[38;5;166m\e[48;5;190m\e[5;20H\e[34h\e[?25h"
+  - delay: 503
+    content: "\e[0m\e[94m\e[13;107H\e[38;5;232m\e[48;5;166m7\e[5;20H"
+  - delay: 279
+    content: "\e[?25l\e[0m\e[94m\e[1;3H\e[92m\e[40m5\r\n  4\r\n  3\r\n  2\r\n  1\r\n6  \r\n  1\r\n  2\r\n  3\r\n  4\r\n  5\r\n  6\e[0m\e[94m\e[13;82H\e[38;5;17m\e[48;5;190m4\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m6\e[6;20H\e[34h\e[?25h"
+  - delay: 152
+    content: "\e[?25l\e[0m\e[94m\e[1;3H\e[92m\e[40m6\r\n  5\r\n  4\r\n  3\r\n  2\r\n  1\r\n7  \r\n  1\r\n  2\r\n  3\r\n  4\r\n  5\e[0m\e[94m\e[13;82H\e[38;5;17m\e[48;5;190m8\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m7\e[7;20H\e[34h\e[?25h"
+  - delay: 385
+    content: "\e[?25l\e[1;12r\e[0m\e[94m\e[1;1H\e[2M\e[1;26r\e[1;3H\e[92m\e[40m5\r\n  4\r\n  3\r\n  2\r\n  1\r\n8  \r\n  1\r\n  2\r\n  3\r\n  4\r\n  5 \e[0m\e[94m# -------------------------------------\r\n\e[92m\e[40m  6 \e[0m\e[94m# Please enter text above this line\e[13;81H\e[38;5;17m\e[48;5;190m32\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m8\e[6;20H\e[34h\e[?25h\e[?25l\e[34h\e[?25h"
+  - delay: 616
+    content: "\e[?25l\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[13;1H\e[38;5;17m\e[48;5;45m None \e[0m\e[94m\e[38;5;45m\e[48;5;27m\e[0m\e[94m\e[13;8H\e[38;5;27m\e[48;5;53m\e[0m\e[94m\e[13;63H\e[38;5;17m\e[48;5;53m\e[0m\e[94m\e[13;64H\e[38;5;27m\e[48;5;17m\e[0m\e[94m\e[13;65H\e[38;5;255m\e[48;5;27m utf-8[unix] \e[0m\e[94m\e[38;5;45m\e[48;5;27m\e[0m\e[94m\e[13;79H\e[38;5;17m\e[48;5;45m  32% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;45m☰    8/25 \e[0m\e[94m\e[13;96H\e[38;5;17m\e[48;5;45m : 12 \e[0m\e[94m\e[38;5;166m\e[48;5;45m\e[6;16H\e[34h\e[?25h"
+  - delay: 361
+    content: "\e[?25l\e[0m\e[94mH\e[13;100H\e[38;5;17m\e[48;5;45m3\e[6;17H\e[34h\e[?25h"
+  - delay: 272
+    content: "\e[?25l\e[0m\e[94mi\e[13;100H\e[38;5;17m\e[48;5;45m4\e[6;18H\e[34h\e[?25h"
+  - delay: 27
+    content: "\e[?25l\e[0m\e[94m\e[7;15H\e[1m\e[7m\e[94m\e[40m High    [B]    \e[8;15H Highest [B]    \e[6;18H\e[34h\e[?25h"
+  - delay: 11
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[6;18H\e[?25l\e[7;17H\e[K\e[8;15H\e[K\e[13;100H\e[38;5;17m\e[48;5;45m2\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[7;15H\e[1m\e[7m\e[94m\e[40m High    [B]    \e[8;15H Highest [B]    \e[6;18H\e[34h\e[?25h"
+  - delay: 98
+    content: "\e[?25l\e[0m\e[94mg\e[7;17H\e[K\e[8;15H\e[K\e[7;15H\e[1m\e[7m\e[94m\e[40m High    [B]    \e[8;15H Highest [B]    \e[6;19H\e[34h\e[?25h"
+  - delay: 28
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[6;19H"
+  - delay: 8
+    content: "\e[?25l\e[7;15H] \e[7;17H\e[K\e[8;15H\e[K\e[13;100H\e[38;5;17m\e[48;5;45m5\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[6;19H\e[34h\e[?25h"
+  - delay: 18
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[6;19H\e[?25l\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[7;15H\e[1m\e[7m\e[94m\e[40m High    [B]    \e[8;15H Highest [B]    \e[6;19H\e[34h\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[0m\e[94mh\e[7;17H\e[K\e[8;15H\e[K\e[13;100H\e[38;5;17m\e[48;5;45m2\e[0m\e[94m\e[7;15H\e[1m\e[7m\e[94m\e[40m High    [B]    \e[8;15H Highest [B]    \e[6;20H\e[34h\e[?25h"
+  - delay: 11
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[6;20H\e[?25l\e[7;15H] \e[7;17H\e[K\e[8;15H\e[K\e[13;100H\e[38;5;17m\e[48;5;45m6\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[6;20H\e[34h\e[?25h"
+  - delay: 13
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[6;20H\e[?25l\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[7;15H\e[1m\e[7m\e[94m\e[40m High    [B]    \e[8;15H Highest [B]    \e[6;20H\e[34h\e[?25h"
+  - delay: 249
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[6;19H\e[?25l\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[26;1H\e[K"
+  - delay: 16
+    content: "\e[7;15H] \e[7;17H\e[K\e[8;15H\e[K\e[13;1H\e[38;5;17m\e[48;5;190m None \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;8H\e[38;5;238m\e[48;5;53m\e[0m\e[94m\e[13;63H\e[38;5;234m\e[48;5;53m\e[0m\e[94m\e[13;64H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;65H\e[38;5;255m\e[48;5;238m utf-8[unix] \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;79H\e[38;5;17m\e[48;5;190m  32% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    8/25 \e[0m\e[94m\e[13;96H\e[38;5;17m\e[48;5;190m : 15 \e[0m\e[94m\e[38;5;166m\e[48;5;190m\e[6;19H\e[34h\e[?25h"
+  - delay: 423
+    content: "\e[?25l\e[1;12r\e[0m\e[94m\e[12;1H\r\n\e[1;26r\e[1;3H\e[92m\e[40m5\r\n  4\r\n  3\r\n  2\r\n  1\r\n9  \r\n  1\r\n  2\r\n  3\r\n  4\r\n  5\r\n  6 \e[0m\e[94m# An empty message will abort the operation.\e[13;82H\e[38;5;17m\e[48;5;190m6\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m9\e[6;19H\e[34h\e[?25h"
+  - delay: 159
+    content: "\e[?25l\e[1;12r\e[0m\e[94m\e[12;1H\r\n\e[1;26r\e[1;3H\e[92m\e[40m5\r\n  4\r\n  3\r\n  2\r\n  1\r\n10 \r\n  1\r\n  2\r\n  3\r\n  4\r\n  5\r\n  6 \e[0m\e[94m#\e[13;81H\e[38;5;17m\e[48;5;190m40\e[0m\e[94m\e[6C\e[1m\e[38;5;17m\e[48;5;190m10\e[6;19H\e[34h\e[?25h"
+  - delay: 367
+    content: "\e[?25l\e[26;1H\e[0m\e[94m:\e[34h\e[?25h"
+  - delay: 208
+    content: w
+  - delay: 80
+    content: q
+  - delay: 200
+    content: "\r\e[?25l\"vira_prompt\" 25L, 749C written"
+  - delay: 477
+    content: "\r\r\nAdded https://jira.tgall.ca/browse/VIRA-210\r\r\n\r\n\e[36mPress ENTER or type command to continue\e[34h\e[?25h"
+  - delay: 1534
+    content: "\e[0m\e[94m\e[1;1H\e[3L\e[?25l\e[1;1H\e[92m\e[40m1   \e[0m\e[94m\r\n\e[93m~                                                                                                                  \e[3;1H~                                                                                                                  \e[4;1H~                                                                                                                  \e[5;1H~                                                                                                                  \e[6;1H~                                                                                                                  \e[7;1H~                                                                                                                  \e[8;1H~                                                                                                                  \e[9;1H~                                                                                                                  \e[10;1H~                                                                                                                  \e[11;1H~                                                                                                                  \e[12;1H~                                                                                                                  \e[13;1H~                                                                                                                  \e[14;1H~                                                                                                                  \e[0m\e[94m\e[25;1H\e[38;5;17m\e[48;5;190m None \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;8H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;9H\e[38;5;85m\e[48;5;234m /tmp/                                                                  \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;82H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;83H\e[38;5;255m\e[48;5;238m [unix] \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;92H\e[38;5;17m\e[48;5;190m 100% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    0/1 \e[0m\e[94m\e[25;108H\e[38;5;17m\e[48;5;190m :  1 \e[0m\e[94m\e[38;5;166m\e[48;5;190m\e[0m\e[94m\e[25;115H\e[38;5;160m\e[48;5;166m\e[0m\e[94m\e[26;1H\e[K\e]0;[No Name] - VIM\a\e[1;5H\e[34h\e[?25h"
+  - delay: 884
+    content: "\e[?25l\e[26;1H:\e[34h\e[?25h"
+  - delay: 264
+    content: v
+  - delay: 144
+    content: i
+  - delay: 119
+    content: r
+  - delay: 289
+    content: a
+  - delay: 920
+    content: i
+  - delay: 95
+    content: s
+  - delay: 177
+    content: s
+  - delay: 88
+    content: u
+  - delay: 152
+    content: e
+  - delay: 656
+    content: s
+  - delay: 216
+    content: "...\e[?25l\r:ViraI\e[26;12H\e[K\e[26;12H\e[34h\e[?25h"
+  - delay: 440
+    content: "\r"
+  - delay: 139
+    content: "\e[?25l"
+  - delay: 46
+    content: "\e[17;1H\e[38;5;239m\e[48;5;236m /tmp/                                                                            \e[0m\e[94m\e[38;5;236m\e[48;5;236m\e[0m\e[94m\e[17;84H\e[38;5;235m\e[48;5;236m\e[0m\e[94m\e[17;85H\e[38;5;239m\e[48;5;235m [unix] \e[0m\e[94m\e[38;5;234m\e[48;5;235m\e[0m\e[94m\e[17;94H\e[38;5;239m\e[48;5;234m 100% ☰    0/1 \e[17;110H :  1 \e[0m\e[94m\e[18;1H\e[92m\e[40m  1 \e[0m\e[94m\e[18;5H\e[K\e[25;15H\e[38;5;85m\e[48;5;234mvira_menu\e[0m\e[94m\e[46C\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;72H\e[38;5;85m\e[48;5;234mvira_menu \e]0;vira_menu (/tmp) - VIM\a"
+  - delay: 265
+    content: "\a\e[0m\e[94m\e[18;2H\e[92m\e[40m46\e[0m\e[94m\e[1C\e[36mturn                    \e[0m\e[94m\e[32m  │\e[18;32H \e[0m\e[94m\e[91mBug\e[0m\e[94m\e[32m   │\e[18;40H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[18;48H Unassigned\e[0m\e[94m\r\n\e[92m\e[40m 47 \e[0m\e[94m\e[36m                        \e[0m\e[94m\e[32m  │\e[19;32H \e[0m\e[94m\e[38;5;121mStory\e[0m\e[94m\e[32m │\e[19;40H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[19;48H Unassigned\e[0m\e[94m\e[19;59H\e[K\e[20;1H\e[92m\e[40m 48 \e[0m\e[94m\e[36m                        \e[0m\e[94m\e[32m  │\e[20;32H \e[0m\e[94m\e[34mTask\e[0m\e[94m\e[32m  │\e[20;40H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[20;48H Travis Gall\e[0m\e[94m\e[20;60H\e[K\e[21;1H\e[92m\e[40m 49 \e[0m\e[94m\e[36m                        \e[0m\e[94m\e[32m  │\e[21;32H \e[0m\e[94m\e[34mTask\e[0m\e[94m\e[32m  │\e[21;40H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[21;48H Unassigned\e[0m\e[94m\e[21;59H\e[K\e[22;1H\e[92m\e[40m 50 \e[0m\e[94m\e[36m                        \e[0m\e[94m\e[32m  │\e[22;32H \e[0m\e[94m\e[38;5;121mStory\e[0m\e[94m\e[32m │\e[22;40H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[22;48H Unassigned\e[0m\e[94m\e[22;59H\e[K\e[23;1H\e[92m\e[40m 51 \e[0m\e[94m\e[36m                        \e[0m\e[94m\e[32m  │\e[23;32H \e[0m\e[94m\e[38;5;121mStory\e[0m\e[94m\e[32m │\e[23;40H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[23;48H Travis Gall\e[0m\e[94m\e[23;60H\e[K\e[24;1H\e[92m\e[40m 52 \e[0m\e[94m\e[36m                        \e[0m\e[94m\e[32m  │\e[24;32H \e[0m\e[94m\e[91mBug\e[0m\e[94m\e[32m   │\e[24;40H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[24;48H Travis Gall\e[0m\e[94m\e[24;60H\e[K\e[25;69H\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;70H\e[38;5;85m\e[48;5;234m vira_menu \e[0m\e[94m\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;82H\e[38;5;255m\e[48;5;238m [unix] \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;91H\e[38;5;17m\e[48;5;190m 100% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰   52/52\e[0m\e[94m\e[4C\e[38;5;17m\e[48;5;190m11\e[0m\e[94m\e[26;1H\e[K"
+  - delay: 5
+    content: "\e[18;2H\e[92m\e[40m 1\e[0m\e[94m\e[1C\e[91mVIRA-210 │\e[18;15H \e[0m\e[94m\e[36mVira showcase                                                        \e[0m\e[94m\e[32m  │\e[18;88H \e[0m\e[94m\e[34mTask\e[0m\e[94m\e[32m  │\e[18;96H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[18;104H Unassigned\e[0m\e[94m\e[19;2H\e[92m\e[40m 2\e[0m\e[94m\e[1C\e[91mVIRA-136 │\e[19;15H \e[0m\e[94m\e[36mCreate vira demo animated gif for README.md                          \e[0m\e[94m\e[32m  │\e[19;88H \e[0m\e[94m\e[34mTask\e[0m\e[94m\e[32m  │\e[19;96H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[19;104H Mike Boiko\e[0m\e[94m\e[20;2H\e[92m\e[40m 3\e[0m\e[94m\e[1C\e[91mVIRA-204 │\e[20;15H \e[0m\e[94m\e[36mget and set cleanup                                                  \e[0m\e[94m\e[32m  │\e[20;88H \e[0m\e[94m\e[91mBug\e[0m\e[94m\e[32m   │\e[20;96H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[20;104H Unassigned\e[0m\e[94m\e[21;2H\e[92m\e[40m 4\e[0m\e[94m\e[1C\e[91mVIRA-176 │\e[21;15H \e[0m\e[94m\e[36mViraSetStatus yields E488: Trailing characters                       \e[0m\e[94m\e[32m  │\e[21;88H \e[0m\e[94m\e[91mBug\e[0m\e[94m\e[32m   │\e[21;96H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[21;104H Mike Boiko\e[0m\e[94m\e[22;2H\e[92m\e[40m 5\e[0m\e[94m\e[1C\e[91mVIRA-209 │\e[22;15H \e[0m\e[94m\e[36mupdate programming standards for major upgrade and Patch Version Cont\e[0m\e[94m\e[32m  │\e[22;88H \e[0m\e[94m\e[34mTask\e[0m\e[94m\e[32m  │\e[22;96H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[22;104H Travis Gall\e[0m\e[94m\e[23;2H\e[92m\e[40m 6\e[0m\e[94m\e[1C\e[91mVIRA-208 │\e[23;15H \e[0m\e[94m\e[36mAfter closing vira_prompt, I shouldn't have to press <CR> on vim mess\e[0m\e[94m\e[32m  │\e[23;88H \e[0m\e[94m\e[34mTask\e[0m\e[94m\e[32m  │\e[23;96H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[23;104H Mike Boiko\e[0m\e[94m\e[24;2H\e[92m\e[40m 7\e[0m\e[94m\e[1C\e[91mVIRA-207 │\e[24;15H \e[0m\e[94m\e[36mFix Vira Refresh after editing summary/description/comments          \e[0m\e[94m\e[32m  │\e[24;88H \e[0m\e[94m\e[34mTask\e[0m\e[94m\e[32m  │\e[24;96H \e[0m\e[94m\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[32m │\e[24;104H Mike Boiko\e[0m\e[94m\e[25;92H\e[38;5;17m\e[48;5;190m  2\e[0m\e[94m\e[6C\e[1m\e[38;5;17m\e[48;5;190m 1/50\e[0m\e[94m\e[4C\e[38;5;17m\e[48;5;190m  \e[18;5H\e[34h\e[?25h"
+  - delay: 912
+    content: "\e[25;94H4\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m2\e[19;5H"
+  - delay: 208
+    content: "\e[0m\e[94m\e[25;94H\e[38;5;17m\e[48;5;190m2\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m1\e[18;5H"
+  - delay: 250
+    content: "\e[?25l\e[34h\e[?25h\e[?25l\e[34h\e[?25h\e[?25l"
+  - delay: 11
+    content: "\e[0m\e[94m\e[17;1H\e[93m~                                                                                                                  \e[18;1H~                                                                                                                  \e[19;1H~                                                                                                                  \e[20;1H~                                                                                                                  \e[21;1H~                                                                                                                  \e[22;1H~                                                                                                                  \e[23;1H~                                                                                                                  \e[24;1H~                                                                                                                  \e[0m\e[94m\e[25;2H\e[38;5;17m\e[48;5;190mVIRA-210 \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;12H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;13H\e[38;5;85m\e[48;5;234m /tmp/     \e[45C           \e[0m\e[94m\e[1C\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;82H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;83H\e[38;5;255m\e[48;5;238m [unix] \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;93H\e[38;5;17m\e[48;5;190m100% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    0/1\e]0;[No Name] - VIM\a\e[1;5H\e[34h\e[?25h"
+  - delay: 1161
+    content: "\e[?25l\e[26;1H\e[0m\e[94m:\e[34h\e[?25h"
+  - delay: 272
+    content: v
+  - delay: 88
+    content: i
+  - delay: 200
+    content: r
+  - delay: 280
+    content: a
+  - delay: 416
+    content: r
+  - delay: 104
+    content: e
+  - delay: 135
+    content: p
+  - delay: 185
+    content: o
+  - delay: 104
+    content: "...\e[?25l\r:ViraReport\e[26;12H\e[K\e[26;12H\e[34h\e[?25h"
+  - delay: 600
+    content: "\r"
+  - delay: 43
+    content: "\e[?25l\e[1;58H\e[93m\e[103m|\e[2;58H|\e[3;58H|\e[4;58H|\e[5;58H|\e[6;58H|\e[7;58H|\e[8;58H|\e[9;58H|\e[10;58H|\e[11;58H|\e[12;58H|\e[13;58H|\e[14;58H|\e[15;58H|\e[16;58H|\e[17;58H|\e[18;58H|\e[19;58H|\e[20;58H|\e[21;58H|\e[22;58H|\e[23;58H|\e[24;58H|\e[0m\e[94m\r\n\e[38;5;239m\e[48;5;236m /tmp/                          \e[0m\e[94m\e[38;5;236m\e[48;5;236m\e[0m\e[94m\e[25;34H\e[38;5;235m\e[48;5;236m\e[0m\e[94m\e[25;35H\e[38;5;234m\e[48;5;235m\e[0m\e[94m\e[25;36H\e[38;5;239m\e[48;5;234m 100% ☰    0/1 \e[25;52H :  1 \e[0m\e[94m\e[1m\e[7m\e[93m\e[40m \e[0m\e[94m\e[2;59H\e[93m~\e[3;59H~\e[4;59H~\e[5;59H~\e[6;59H~\e[7;59H~\e[8;59H~\e[9;59H~\e[10;59H~\e[11;59H~\e[12;59H~\e[13;59H~\e[14;59H~\e[15;59H~\e[16;59H~\e[17;59H~\e[18;59H~\e[19;59H~\e[20;59H~\e[21;59H~\e[22;59H~\e[23;59H~\e[24;59H~\e[0m\e[94m\e[25;59H\e[38;5;17m\e[48;5;190m VIRA-210 \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;70H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;72H\e[38;5;85m\e[48;5;234m/tmp/vira_report   \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;92H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;93H\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;94H\e[38;5;17m\e[48;5;190m 100% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    0/1 \e[0m\e[94m\e[25;111H\e[38;5;17m\e[48;5;190m:  1 \e]0;vira_report (/tmp) - VIM\a"
+  - delay: 54
+    content: "\a\e[0m\e[94m\e[1;59H\e[34m┌\e[1;60H─\e[1;61H─\e[1;62H─\e[1;63H─\e[1;64H─\e[1;65H─\e[1;66H─\e[1;67H─\e[1;68H─\e[1;69H─\e[1;70H─\e[1;71H─\e[1;72H─\e[1;73H─\e[1;74H─\e[1;75H─\e[1;76H─\e[1;77H─\e[1;78H─\e[1;79H─\e[1;80H─\e[1;81H─\e[1;82H─\e[1;83H─\e[1;84H─\e[1;85H─\e[1;86H─\e[1;87H─\e[1;88H─\e[1;89H─\e[1;90H─\e[1;91H─\e[1;92H─\e[1;93H┐\e[2;59H│\e[0m\e[94m\e[2;60H\e[91m            VIRA-210             \e[0m\e[94m\e[34m│\e[0m\e[94m\e[2;94H\e[K\e[3;59H\e[34m├\e[3;60H─\e[3;61H─\e[3;62H─\e[3;63H─\e[3;64H─\e[3;65H─\e[3;66H─\e[3;67H─\e[3;68H─\e[3;69H─\e[3;70H─\e[3;71H─\e[3;72H─\e[3;73H─\e[3;74H┬\e[3;75H─\e[3;76H─\e[3;77H─\e[3;78H─\e[3;79H─\e[3;80H─\e[3;81H─\e[3;82H─\e[3;83H─\e[3;84H─\e[3;85H─\e[3;86H─\e[3;87H─\e[3;88H─\e[3;89H─\e[3;90H─\e[3;91H─\e[3;92H─\e[3;93H┤\e[0m\e[94m\e[3;94H\e[K\e[4;59H\e[34m│\e[4;60H      Created │\e[4;75H \e[0m\e[94m\e[93m2020-06-26 22:46\e[0m\e[94m\e[34m │\e[0m\e[94m\e[4;94H\e[K\e[5;59H\e[34m│\e[5;60H      Updated │\e[5;75H \e[0m\e[94m\e[93m2020-06-26 22:46\e[0m\e[94m\e[34m │\e[0m\e[94m\e[5;94H\e[K\e[6;59H\e[34m│\e[6;60H         Type │\e[0m\e[94m\e[6;75H \e[34mTask\e[0m\e[94m             \e[34m│\e[0m\e[94m\e[6;94H\e[K\e[7;59H\e[34m│\e[7;60H       Status │\e[0m\e[94m\e[7;75H \e[97m\e[48;5;242mTo Do\e[0m\e[94m            \e[34m│\e[0m\e[94m\e[7;94H\e[K\e[8;59H\e[34m│\e[8;60H Story Points │\e[0m\e[94m\e[8;75H None             \e[34m│\e[0m\e[94m\e[8;94H\e[K\e[9;59H\e[34m│\e[9;60H     Priority │\e[0m\e[94m\e[9;75H \e[91mHigh\e[0m\e[94m             \e[34m│\e[0m\e[94m\e[9;94H\e[K\e[10;59H\e[34m│\e[10;60H    Component │\e[0m\e[94m\e[10;75H                  \e[34m│\e[0m\e[94m\e[10;94H\e[K\e[11;59H\e[34m│\e[11;60H      Version │\e[0m\e[94m\e[11;75H                  \e[34m│\e[0m\e[94m\e[11;94H\e[K\e[12;59H\e[34m│\e[12;60H     Assignee │\e[0m\e[94m\e[12;75H \e[32mUnassigned     \e[0m\e[94m  \e[34m│\e[0m\e[94m\e[12;94H\e[K\e[13;59H\e[34m│\e[13;60H     Reporter │\e[0m\e[94m\e[13;75H \e[32mMike Boiko     \e[0m\e[94m  \e[34m│\e[0m\e[94m\e[13;94H\e[K\e[14;59H\e[34m└\e[14;60H─\e[14;61H─\e[14;62H─\e[14;63H─\e[14;64H─\e[14;65H─\e[14;66H─\e[14;67H─\e[14;68H─\e[14;69H─\e[14;70H─\e[14;71H─\e[14;72H─\e[14;73H─\e[14;74H┴\e[14;75H─\e[14;76H─\e[14;77H─\e[14;78H─\e[14;79H─\e[14;80H─\e[14;81H─\e[14;82H─\e[14;83H─\e[14;84H─\e[14;85H─\e[14;86H─\e[14;87H─\e[14;88H─\e[14;89H─\e[14;90H─\e[14;91H─\e[14;92H─\e[14;93H┘\e[0m\e[94m\e[14;94H\e[K\e[15;59H\e[91mSummary\e[0m\e[94m\e[15;66H\e[K\e[16;59HVira showcase\e[16;72H\e[K\e[17;59H\e[K\e[18;59H\e[91mDescription\e[0m\e[94m\e[18;70H\e[K\e[19;59Hhello world\e[19;70H\e[K\e[20;59H\e[K\e[21;59H\e[91mComments\e[0m\e[94m\e[21;67H\e[K\e[25;90H\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;91H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;92H\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;93H\e[38;5;17m\e[48;5;190m   4% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    1/2\e[1;59H\e[34h\e[?25h"
+  - delay: 828
+    content: "\e[0m\e[94m\e[25;96H\e[38;5;17m\e[48;5;190m9\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m2\e[2;59H"
+  - delay: 166
+    content: "\e[0m\e[94m\e[25;95H\e[38;5;17m\e[48;5;190m14\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m3\e[3;59H"
+  - delay: 659
+    content: "\e[0m\e[94m\e[25;96H\e[38;5;17m\e[48;5;190m9\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m4\e[4;59H"
+  - delay: 41
+    content: "\e[0m\e[94m\e[25;95H\e[38;5;17m\e[48;5;190m23\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m5\e[5;59H"
+  - delay: 41
+    content: "\e[0m\e[94m\e[25;96H\e[38;5;17m\e[48;5;190m8\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m6\e[6;59H"
+  - delay: 40
+    content: "\e[0m\e[94m\e[25;95H\e[38;5;17m\e[48;5;190m33\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m7\e[7;59H"
+  - delay: 39
+    content: "\e[0m\e[94m\e[25;96H\e[38;5;17m\e[48;5;190m8\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m8\e[8;59H"
+  - delay: 41
+    content: "\e[0m\e[94m\e[25;95H\e[38;5;17m\e[48;5;190m42\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m9\e[9;59H"
+  - delay: 154
+    content: "\e[0m\e[94m\e[25;96H\e[38;5;17m\e[48;5;190m7\e[0m\e[94m\e[6C\e[1m\e[38;5;17m\e[48;5;190m10\e[10;59H"
+  - delay: 544
+    content: "\e[0m\e[94m\e[25;95H\e[38;5;17m\e[48;5;190m52\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m1\e[11;59H"
+  - delay: 663
+    content: "\e[0m\e[94m\e[25;96H\e[38;5;17m\e[48;5;190m7\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m2\e[12;59H"
+  - delay: 41
+    content: "\e[0m\e[94m\e[25;95H\e[38;5;17m\e[48;5;190m61\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m3\e[13;59H"
+  - delay: 41
+    content: "\e[0m\e[94m\e[25;96H\e[38;5;17m\e[48;5;190m6\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m4\e[14;59H"
+  - delay: 40
+    content: "\e[0m\e[94m\e[25;95H\e[38;5;17m\e[48;5;190m71\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m5\e[15;59H"
+  - delay: 41
+    content: "\e[0m\e[94m\e[25;96H\e[38;5;17m\e[48;5;190m6\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m6\e[16;59H"
+  - delay: 329
+    content: "\e[0m\e[94m\e[25;95H\e[38;5;17m\e[48;5;190m80\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m7\e[17;59H"
+  - delay: 213
+    content: "\e[0m\e[94m\e[25;96H\e[38;5;17m\e[48;5;190m5\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m8\e[18;59H"
+  - delay: 1133
+    content: "\e[0m\e[94m\e[25;114H\e[38;5;17m\e[48;5;190m2\e[18;60H"
+  - delay: 1363
+    content: "\e[?25l\e[0m\e[94m\e[26;1H\e[K\e[26;1H:\e[34h\e[?25h"
+  - delay: 304
+    content: v
+  - delay: 112
+    content: i
+  - delay: 128
+    content: r
+  - delay: 104
+    content: a
+  - delay: 256
+    content: c
+  - delay: 144
+    content: c
+  - delay: 392
+    content: "\e[?25l\e[26;7H\e[K\e[26;7H\e[34h\e[?25h"
+  - delay: 208
+    content: o
+  - delay: 184
+    content: m
+  - delay: 104
+    content: "...\e[?25l\r:ViraComment\e[34h\e[?25h"
+  - delay: 496
+    content: "\r"
+  - delay: 108
+    content: "\e[?25l"
+  - delay: 10
+    content: '"vira_prompt" 8L, 251C'
+  - delay: 29
+    content: "\e[1;59H\e[92m\e[40m1   \e[0m\e[94m\e[1;63H\e[K\e[2;59H\e[92m\e[40m  1 \e[0m\e[94m\e[92m# -------------------------------------\e[0m\e[94m\e[3;59H\e[92m\e[40m  2 \e[0m\e[94m\e[92m# Please enter text above this line\e[0m\e[94m\e[4;59H\e[92m\e[40m  3 \e[0m\e[94m\e[92m# An empty message will abort the operation.\e[0m\e[94m\e[5;59H\e[92m\e[40m  4 \e[0m\e[94m\e[92m#\e[0m\e[94m\e[5;64H\e[K\e[6;59H\e[92m\e[40m  5 \e[0m\e[94m\e[92m# Below is a list of acceptable values for each      \e[0m\e[94m\e[7;59H\e[92m\e[40m    \e[0m\e[94m\e[92minput field.\e[0m\e[94m\e[7;76H\e[K\e[8;59H\e[92m\e[40m  6 \e[0m\e[94m\e[92m# Users: {'Mike Boiko ~ mikeboiko', 'Travis Gall ~   \e[0m\e[94m\e[9;59H\e[92m\e[40m    \e[0m\e[94m\e[92mtravis.gall'}\e[0m\e[94m\e[9;76H\e[K\e[10;59H\e[92m\e[40m  7 \e[0m\e[94m\e[10;63H\e[K\e[11;59H\e[93m~                                                        \e[12;59H~                                                        \e[0m\e[94m\e[13;59H\e[38;5;17m\e[48;5;190m VIRA-210 \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;70H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;71H\e[38;5;85m\e[48;5;234m /tmp/vira_prompt   \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[13;92H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;93H\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;94H\e[38;5;17m\e[48;5;190m  12% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    1/8 \e[0m\e[94m\e[13;110H\e[38;5;17m\e[48;5;190m :  1 \e[0m\e[94m\e[14;59H\e[34m│\e[14;60H    Component │\e[0m\e[94m\e[14;75H                  \e[34m│\e[15;59H│\e[15;60H      Version │\e[15;93H│\e[16;59H│\e[16;60H     Assignee │\e[0m\e[94m\e[16;76H\e[32mUnassigned     \e[0m\e[94m  \e[34m│\e[17;59H│\e[17;60H     Reporter │\e[0m\e[94m\e[17;76H\e[32mMike Boiko     \e[0m\e[94m  \e[34m│\e[18;59H└\e[18;60H─\e[18;61H─\e[18;62H─\e[18;63H─\e[18;64H─\e[18;65H─\e[18;66H─\e[18;67H─\e[18;68H─\e[18;69H─\e[18;70H─\e[18;71H─\e[18;72H─\e[18;73H─\e[18;74H┴\e[18;75H─\e[18;76H─\e[18;77H─\e[18;78H─\e[18;79H─\e[18;80H─\e[18;81H─\e[18;82H─\e[18;83H─\e[18;84H─\e[18;85H─\e[18;86H─\e[18;87H─\e[18;88H─\e[18;89H─\e[18;90H─\e[18;91H"
+  - delay: 11
+    content: "─\e[18;92H─\e[18;93H┘\e[0m\e[94m\e[19;59H\e[91mSummary\e[0m\e[94m\e[19;66H\e[K\e[20;59HVira showcase\e[21;59H\e[K\e[22;59H\e[91mDescription\e[0m\e[94m\e[22;70H\e[K\e[23;59Hhello world\e[23;70H\e[K\e[24;59H\e[K\e[25;59H\e[38;5;239m\e[48;5;236m /tmp/vira_report              \e[0m\e[94m\e[38;5;236m\e[48;5;236m\e[0m\e[94m\e[25;91H\e[38;5;235m\e[48;5;236m\e[0m\e[94m\e[25;92H\e[38;5;234m\e[48;5;235m\e[0m\e[94m\e[25;93H\e[38;5;239m\e[48;5;234m  85% ☰   18/21 \e[25;110H :  2 \e]0;vira_prompt (/tmp) - VIM\a\e[1;63H\e[34h\e[?25h"
+  - delay: 1024
+    content: "\e[?25l\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[26;13H\e[K\e[13;59H\e[38;5;17m\e[48;5;45m VIRA-210 \e[0m\e[94m\e[38;5;45m\e[48;5;27m\e[0m\e[94m\e[13;70H\e[38;5;27m\e[48;5;17m\e[0m\e[94m\e[13;71H\e[97m\e[48;5;17m /tmp/vira_prompt   \e[0m\e[94m\e[38;5;17m\e[48;5;17m\e[0m\e[94m\e[13;92H\e[38;5;27m\e[48;5;17m\e[0m\e[94m\e[13;93H\e[38;5;45m\e[48;5;27m\e[0m\e[94m\e[13;94H\e[38;5;17m\e[48;5;45m  12% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;45m☰    1/8 \e[0m\e[94m\e[13;110H\e[38;5;17m\e[48;5;45m :  1 \e[1;63H\e[34h\e[?25h"
+  - delay: 404
+    content: "\e[?25l\e[0m\e[94mS\e[13;70H\e[38;5;27m\e[48;5;53m\e[0m\e[94m\e[13;71H\e[38;5;255m\e[48;5;53m <p/vira_prompt[+]  \e[0m\e[94m\e[38;5;17m\e[48;5;53m\e[0m\e[94m\e[13;114H\e[38;5;17m\e[48;5;45m2\e]0;vira_prompt + (/tmp) - VIM\a\e[1;64H\e[34h\e[?25h"
+  - delay: 219
+    content: "\e[?25l\e[0m\e[94me\e[13;114H\e[38;5;17m\e[48;5;45m3\e[1;65H\e[34h\e[?25h"
+  - delay: 159
+    content: "\e[?25l\e[0m\e[94me\e[13;114H\e[38;5;17m\e[48;5;45m4\e[1;66H\e[34h\e[?25h"
+  - delay: 120
+    content: "\e[?25l\e[0m\e[94mm\e[13;114H\e[38;5;17m\e[48;5;45m5\e[1;67H\e[34h\e[?25h"
+  - delay: 344
+    content: "\e[?25l\e[0m\e[94ms\e[13;114H\e[38;5;17m\e[48;5;45m6\e[1;68H\e[34h\e[?25h"
+  - delay: 128
+    content: "\e[?25l\e[13;114H7\e[1;69H\e[34h\e[?25h"
+  - delay: 400
+    content: "\e[?25l\e[0m\e[94mt\e[13;114H\e[38;5;17m\e[48;5;45m8\e[1;70H\e[34h\e[?25h"
+  - delay: 112
+    content: "\e[?25l\e[0m\e[94mo\e[13;114H\e[38;5;17m\e[48;5;45m9\e[1;71H\e[34h\e[?25h"
+  - delay: 27
+    content: "\e[?25l\e[0m\e[94m\e[2;68H\e[1m\e[7m\e[94m\e[40m operation [B]  \e[1;71H\e[34h\e[?25h"
+  - delay: 8
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[1;71H\e[?25l\e[13;114H\e[38;5;17m\e[48;5;45m7\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[2;68H\e[1m\e[7m\e[94m\e[40m operation [B]  \e[1;71H\e[34h\e[?25h"
+  - delay: 103
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[?25l\e[2;68H\e[92m----------------\e[0m\e[94m\e[13;113H\e[38;5;17m\e[48;5;45m10\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[1;72H\e[34h\e[?25h"
+  - delay: 110
+    content: "\e[?25l\e[0m\e[94mw\e[13;114H\e[38;5;17m\e[48;5;45m1\e[1;73H\e[34h\e[?25h"
+  - delay: 120
+    content: "\e[?25l\e[0m\e[94mo\e[13;114H\e[38;5;17m\e[48;5;45m2\e[1;74H\e[34h\e[?25h"
+  - delay: 160
+    content: "\e[?25l\e[0m\e[94mr\e[13;114H\e[38;5;17m\e[48;5;45m3\e[1;75H\e[34h\e[?25h"
+  - delay: 512
+    content: "\e[?25l\e[0m\e[94mk\e[13;114H\e[38;5;17m\e[48;5;45m4\e[1;76H\e[34h\e[?25h"
+  - delay: 393
+    content: "\e[?25l\e[13;114H5\e[1;77H\e[34h\e[?25h"
+  - delay: 195
+    content: "\e[?25l\e[0m\e[94mg\e[13;114H\e[38;5;17m\e[48;5;45m6\e[1;78H\e[34h\e[?25h"
+  - delay: 104
+    content: "\e[?25l\e[0m\e[94mo\e[13;114H\e[38;5;17m\e[48;5;45m7\e[1;79H\e[34h\e[?25h"
+  - delay: 132
+    content: "\e[?25l\e[0m\e[94mo\e[13;114H\e[38;5;17m\e[48;5;45m8\e[1;80H\e[34h\e[?25h"
+  - delay: 136
+    content: "\e[?25l\e[0m\e[94md\e[13;114H\e[38;5;17m\e[48;5;45m9\e[1;81H\e[34h\e[?25h"
+  - delay: 2664
+    content: "\e[?25l\e[0m\e[94m!\e[13;113H\e[38;5;17m\e[48;5;45m20\e[1;82H\e[34h\e[?25h"
+  - delay: 741
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[1;81H\e[?25l"
+  - delay: 21
+    content: "\e[13;59H\e[38;5;17m\e[48;5;190m VIRA-210 \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;70H\e[38;5;238m\e[48;5;53m\e[0m\e[94m\e[13;91H\e[38;5;234m\e[48;5;53m\e[0m\e[94m\e[13;92H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;93H\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;94H\e[38;5;17m\e[48;5;190m  12% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    1/8 \e[0m\e[94m\e[13;110H\e[38;5;17m\e[48;5;190m : 19 \e[1;81H\e[34h\e[?25h\e[?25l\e[34h\e[?25h"
+  - delay: 313
+    content: "\e[?25l\e[26;1H\e[0m\e[94m:\e[34h\e[?25h"
+  - delay: 217
+    content: w
+  - delay: 96
+    content: q
+  - delay: 224
+    content: "\r\e[?25l\"vira_prompt\" 8L, 270C written"
+  - delay: 81
+    content: "\e[13;70H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;71H\e[38;5;85m\e[48;5;234m /tmp/vira_prompt   \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[14;59H\e[K\e[15;59H\e[93m~                                                        \e[16;59H~                                                        \e[17;59H~                                                        \e[18;59H~                                                        \e[19;59H~                                                        \e[20;59H~                                                        \e[21;59H~                                                        \e[22;59H~                                                        \e[23;59H~                                                        \e[24;59H~                                                        \e[0m\e[94m\e[25;90H\e[38;5;239m\e[48;5;236m \e[0m\e[94m\e[38;5;236m\e[48;5;236m\e[0m\e[94m\e[25;92H\e[38;5;235m\e[48;5;236m\e[0m\e[94m\e[25;93H\e[38;5;234m\e[48;5;235m\e[0m\e[94m\e[25;95H\e[38;5;239m\e[48;5;234m100% ☰    0/\e[7C1\e]0;vira_report (/tmp) - VIM\a"
+  - delay: 106
+    content: "\e[0m\e[94m\e[26;1H\e[K"
+  - delay: 16
+    content: "\e[1;59H\e[34m┌\e[1;60H─\e[1;61H─\e[1;62H─\e[1;63H─\e[1;64H─\e[1;65H─\e[1;66H─\e[1;67H─\e[1;68H─\e[1;69H─\e[1;70H─\e[1;71H─\e[1;72H─\e[1;73H─\e[1;74H─\e[1;75H─\e[1;76H─\e[1;77H─\e[1;78H─\e[1;79H─\e[1;80H─\e[1;81H─\e[1;82H─\e[1;83H─\e[1;84H─\e[1;85H─\e[1;86H─\e[1;87H─\e[1;88H─\e[1;89H─\e[1;90H─\e[1;91H─\e[1;92H─\e[1;93H┐\e[2;59H│\e[0m\e[94m\e[2;60H\e[91m            VIRA-210             \e[0m\e[94m\e[34m│\e[0m\e[94m\e[2;94H\e[K\e[3;59H\e[34m├\e[3;60H─\e[3;61H─\e[3;62H─\e[3;63H─\e[3;64H─\e[3;65H─\e[3;66H─\e[3;67H─\e[3;68H─\e[3;69H─\e[3;70H─\e[3;71H─\e[3;72H─\e[3;73H─\e[3;74H┬\e[3;75H─\e[3;76H─\e[3;77H─\e[3;78H─\e[3;79H─\e[3;80H─\e[3;81H─\e[3;82H─\e[3;83H─\e[3;84H─\e[3;85H─\e[3;86H─\e[3;87H─\e[3;88H─\e[3;89H─\e[3;90H─\e[3;91H─\e[3;92H─\e[3;93H┤\e[0m\e[94m\e[3;94H\e[K\e[4;59H\e[34m│\e[4;60H      Created │\e[4;75H \e[0m\e[94m\e[93m2020-06-26 22:46\e[0m\e[94m\e[34m │\e[0m\e[94m\e[4;94H\e[K\e[5;59H\e[34m│\e[5;60H      Updated │\e[5;75H \e[0m\e[94m\e[93m2020-06-26 22:46\e[0m\e[94m\e[34m │\e[6;59H│\e[6;60H         Type │\e[0m\e[94m\e[6;75H \e[34mTask\e[0m\e[94m             \e[34m│\e[0m\e[94m\e[6;94H\e[K\e[7;59H\e[34m│\e[7;60H       Status │\e[0m\e[94m\e[7;76H\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[12C\e[34m│\e[8;59H│\e[8;60H Story Points │\e[0m\e[94m\e[8;75H None             \e[34m│\e[0m\e[94m\e[8;94H\e[K\e[9;59H\e[34m│\e[9;60H     Priority │\e[0m\e[94m\e[9;75H \e[91mHigh\e[0m\e[94m\e[13C\e[34m│\e[10;59H│\e[10;60H    Component │\e[10;93H│\e[11;59H│\e[11;60H      Version │\e[0m\e[94m\e[11;75H                  \e[34m│\e[0m\e[94m\e[11;94H\e[K\e[12;59H\e[34m│\e[12;60H     Assignee │\e[0m\e[94m\e[12;75H \e[32mUnassigned     \e[0m\e[94m  \e[34m│\e[0m\e[94m\e[12;94H\e[K\e[13;59H\e[34m│\e[13;60H     Reporter │\e[0m\e[94m\e[13;75H \e[32mMike Boiko     \e[0m\e[94m  \e[34m│\e[0m\e[94m\e[13;94H\e[K\e[14;59H\e[34m└\e[14;60H─\e[14;61H─\e[14;62H─\e[14;63H─\e[14;64H─\e[14;65H─\e[14;66H─\e[14;67H─\e[14;68H─\e[14;69H─\e[14;70H─\e[14;71H─\e[14;72H─"
+  - delay: 13
+    content: "\e[14;73H─\e[14;74H┴\e[14;75H─\e[14;76H─\e[14;77H─\e[14;78H─\e[14;79H─\e[14;80H─\e[14;81H─\e[14;82H─\e[14;83H─\e[14;84H─\e[14;85H─\e[14;86H─\e[14;87H─\e[14;88H─\e[14;89H─\e[14;90H─\e[14;91H─\e[14;92H─\e[14;93H┘\e[0m\e[94m\e[15;59H\e[91mSummary\e[0m\e[94m\e[15;66H\e[K\e[16;59HVira showcase\e[16;72H\e[K\e[17;59H\e[K\e[18;59H\e[91mDescription\e[0m\e[94m\e[18;70H\e[K\e[19;59Hhello world\e[19;70H\e[K\e[20;59H\e[K\e[21;59H\e[91mComments\e[0m\e[94m\e[21;67H\e[K\e[22;59H\e[34mMike Boiko \e[0m\e[94m\e[32m@ 2020-06-26 22:46 {{{2\e[0m\e[94m\e[22;93H\e[K\e[23;59HSeems to work good!\e[23;78H\e[K\e[24;59H\e[32m}}}\e[0m\e[94m\e[24;62H\e[K\e[25;59H\e[38;5;17m\e[48;5;190m VIRA-210 \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;70H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;71H\e[38;5;85m\e[48;5;234m /tmp/vira_report  \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;91H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;92H\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;93H\e[38;5;17m\e[48;5;190m   4% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    1/24 \e[0m\e[94m\e[25;110H\e[38;5;17m\e[48;5;190m :  1 \e[1;59H\e[34h\e[?25h"
+  - delay: 1296
+    content: "\e[25;96H8\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m2\e[2;59H"
+  - delay: 176
+    content: "\e[0m\e[94m\e[25;95H\e[38;5;17m\e[48;5;190m12\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m3\e[3;59H"
+  - delay: 337
+    content: "\e[?25l\e[0m\e[94m\e[22;91H\e[31m\e[102m{\e[24;59H}\e[0m\e[94m\e[25;94H\e[38;5;17m\e[48;5;190m100\e[0m\e[94m\e[6C\e[1m\e[38;5;17m\e[48;5;190m24\e[24;59H\e[34h\e[?25h"
+  - delay: 416
+    content: "\e[?25l\e[0m\e[94m\e[22;91H\e[32m{\e[24;59H}\e[0m\e[94m\e[25;94H\e[38;5;17m\e[48;5;190m 95\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m3\e[23;59H\e[34h\e[?25h"
+  - delay: 1319
+    content: "\e[?25l"
+  - delay: 187
+    content: "\e[0m\e[94m\r\n\r\n\r\n\"vira_prompt\" 8L, 270C"
+  - delay: 30
+    content: "\e[1;59H\e[92m\e[40m1   \e[0m\e[94mSeems to work good!\e[1;82H\e[K\e[2;59H\e[92m\e[40m  1 \e[0m\e[94m\e[92m# -------------------------------------\e[0m\e[94m\e[3;59H\e[92m\e[40m  2 \e[0m\e[94m\e[92m# Please enter text above this line\e[0m\e[94m\e[4;59H\e[92m\e[40m  3 \e[0m\e[94m\e[92m# An empty message will abort the operation.\e[0m\e[94m\e[5;59H\e[92m\e[40m  4 \e[0m\e[94m\e[92m#\e[0m\e[94m\e[5;64H\e[K\e[6;59H\e[92m\e[40m  5 \e[0m\e[94m\e[92m# Below is a list of acceptable values for each      \e[0m\e[94m\e[7;59H\e[92m\e[40m    \e[0m\e[94m\e[92minput field.\e[0m\e[94m\e[7;76H\e[K\e[8;59H\e[92m\e[40m  6 \e[0m\e[94m\e[92m# Users: {'Mike Boiko ~ mikeboiko', 'Travis Gall ~   \e[0m\e[94m\e[9;59H\e[92m\e[40m    \e[0m\e[94m\e[92mtravis.gall'}\e[0m\e[94m\e[9;76H\e[K\e[10;59H\e[92m\e[40m  7 \e[0m\e[94m\e[10;63H\e[K\e[11;59H\e[93m~                                                        \e[12;59H~                                                        \e[0m\e[94m\e[13;59H\e[38;5;17m\e[48;5;190m VIRA-210 \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;70H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;71H\e[38;5;85m\e[48;5;234m /tmp/vira_prompt   \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[13;92H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;93H\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;94H\e[38;5;17m\e[48;5;190m  12% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    1/8 \e[0m\e[94m\e[13;110H\e[38;5;17m\e[48;5;190m :  1 \e[0m\e[94m\e[14;59H\e[34m│\e[14;60H     Reporter │\e[0m\e[94m\e[14;75H \e[32mMike Boiko     \e[0m\e[94m  \e[34m│\e[15;59H└\e[15;60H─\e[15;61H─\e[15;62H─\e[15;63H─\e[15;64H─\e[15;65H─\e[15;66H─\e[15;67H─\e[15;68H─\e[15;69H─\e[15;70H─\e[15;71H─\e[15;72H─\e[15;73H─\e[15;74H┴\e[15;75H─\e[15;76H─\e[15;77H─\e[15;78H─\e[15;79H─\e[15;80H─\e[15;81H─\e[15;82H─\e[15;83H─\e[15;84H─\e[15;85H─\e[15;86H─\e[15;87H─\e[15;88H─\e[15;89H─\e[15;90H─\e[15;91H─\e[15;92H─\e[15;93H┘\e[0m\e[94m\e[16;59H\e[91mSummary\e[0m\e[94m\e[16;66H\e[K\e[17;59HVira showcase\e[18;59H\e[K\e[19;59H\e[91mDescription\e[0m\e[94m\e[20;59Hhello world\e[21;59H\e[K\e[22;59H\e[91mComments\e[0m\e[94m"
+  - delay: 11
+    content: "\e[22;67H\e[K\e[23;59H\e[34mMike Boiko \e[0m\e[94m\e[32m@ 2020-06-26 22:46 {{{2\e[0m\e[94m\e[24;59HSeems to work good!\e[25;59H\e[38;5;239m\e[48;5;236m /tmp/vira_report              \e[0m\e[94m\e[38;5;236m\e[48;5;236m\e[0m\e[94m\e[25;91H\e[38;5;235m\e[48;5;236m\e[0m\e[94m\e[25;92H\e[38;5;234m\e[48;5;235m\e[0m\e[94m\e[25;93H\e[38;5;239m\e[48;5;234m  95% ☰   23/24 \e[25;110H :  1 \e]0;vira_prompt (/tmp) - VIM\a\e[1;63H\e[34h\e[?25h"
+  - delay: 676
+    content: "\e[0m\e[94m\e[13;114H\e[38;5;17m\e[48;5;190m7\e[1;69H"
+  - delay: 200
+    content: "\e[13;113H10\e[1;72H"
+  - delay: 184
+    content: "\e[13;114H5\e[1;77H"
+  - delay: 629
+    content: "\e[?25l\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[26;13H\e[K\e[1;77H!\e[1;78H\e[K\e[13;59H\e[38;5;17m\e[48;5;45m VIRA-210 \e[0m\e[94m\e[38;5;45m\e[48;5;27m\e[0m\e[94m\e[13;70H\e[38;5;27m\e[48;5;53m\e[0m\e[94m\e[13;71H\e[38;5;255m\e[48;5;53m <p/vira_prompt[+]  \e[0m\e[94m\e[38;5;17m\e[48;5;53m\e[0m\e[94m\e[13;92H\e[38;5;27m\e[48;5;17m\e[0m\e[94m\e[13;93H\e[38;5;45m\e[48;5;27m\e[0m\e[94m\e[13;94H\e[38;5;17m\e[48;5;45m  12% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;45m☰    1/8 \e[0m\e[94m\e[13;110H\e[38;5;17m\e[48;5;45m : 15 \e]0;vira_prompt + (/tmp) - VIM\a\e[1;77H\e[34h\e[?25h"
+  - delay: 248
+    content: "\e[?25l\e[0m\e[94mp!\e[13;114H\e[38;5;17m\e[48;5;45m6\e[1;78H\e[34h\e[?25h"
+  - delay: 70
+    content: "\e[?25l\e[0m\e[94me!\e[13;114H\e[38;5;17m\e[48;5;45m7\e[1;79H\e[34h\e[?25h"
+  - delay: 22
+    content: "\e[?25l\e[0m\e[94m\e[2;76H\e[1m\e[7m\e[94m\e[40m operation  [B]  \e[3;76H Please     [B]  \e[4;76H acceptable [B]  \e[5;76H Type       [B]  \e[6;76H Component  [B]  \e[7;76H Reporter   [B]  \e[8;76H Updated    [B]  \e[1;79H\e[34h\e[?25h"
+  - delay: 9
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[1;79H\e[?25l\e[5;76H\e[K\e[7;76H\e[K\e[13;114H\e[38;5;17m\e[48;5;45m5\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[2;76H\e[1m\e[7m\e[94m\e[40m operation  [B]  \e[3;76H Please     [B]  \e[4;76H acceptable [B]  \e[5;76H Type       [B]  \e[6;76H Component  [B]  \e[7;76H Reporter   [B]  \e[8;76H Updated    [B]  \e[1;79H\e[34h\e[?25h"
+  - delay: 57
+    content: "\e[?25l\e[0m\e[94mr!\e[5;76H\e[K\e[7;76H\e[K\e[2;76H\e[1m\e[7m\e[94m\e[40m operation  [B]  \e[3;76H Please     [B]  \e[4;76H acceptable [B]  \e[5;76H Type       [B]  \e[6;76H Component  [B]  \e[7;76H Reporter   [B]  \e[8;76H Updated    [B]  \e[1;80H\e[34h\e[?25h"
+  - delay: 9
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[1;80H\e[?25l\e[2;76H\e[92m-----------------\e[3;76Hr text above this\e[4;76Hssage will abort \e[0m\e[94m\e[5;76H\e[K\e[6;76H\e[92mlist of acceptabl\e[0m\e[94m\e[7;76H\e[K\e[8;76H\e[92mke Boiko ~ mikebo\e[0m\e[94m\e[13;114H\e[38;5;17m\e[48;5;45m8\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[1;80H\e[34h\e[?25h"
+  - delay: 14
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[1;80H\e[?25l\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[2;76H\e[1m\e[7m\e[94m\e[40m operation [B]  \e[3;76H Reporter  [B]  \e[1;80H\e[34h\e[?25h"
+  - delay: 199
+    content: "\e[?25l\e[0m\e[94mf!\e[13;114H\e[38;5;17m\e[48;5;45m5\e[0m\e[94m\e[2;76H\e[1m\e[7m\e[94m\e[40m operation [B]  \e[3;76H Reporter  [B]  \e[1;81H\e[34h\e[?25h"
+  - delay: 7
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[1;81H\e[?25l\e[2;76H\e[92m----------------\e[3;76Hr text above thi\e[0m\e[94m\e[13;114H\e[38;5;17m\e[48;5;45m9\e[0m\e[94m\e[26;1H\e[34m-- INSERT --\e[1;81H\e[34h\e[?25h"
+  - delay: 204
+    content: "\e[?25l\e[0m\e[94m\e[26;1H\e[K\e[1;81He!\e[26;1H\e[34m-- INSERT --\e[0m\e[94m\e[13;113H\e[38;5;17m\e[48;5;45m20\e[1;82H\e[34h\e[?25h"
+  - delay: 128
+    content: "\e[?25l\e[0m\e[94mc!\e[13;114H\e[38;5;17m\e[48;5;45m1\e[1;83H\e[34h\e[?25h"
+  - delay: 304
+    content: "\e[?25l\e[0m\e[94mt!\e[13;114H\e[38;5;17m\e[48;5;45m2\e[1;84H\e[34h\e[?25h"
+  - delay: 597
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[1;83H\e[?25l"
+  - delay: 22
+    content: "\e[13;59H\e[38;5;17m\e[48;5;190m VIRA-210 \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;70H\e[38;5;238m\e[48;5;53m\e[0m\e[94m\e[13;91H\e[38;5;234m\e[48;5;53m\e[0m\e[94m\e[13;92H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;93H\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[13;94H\e[38;5;17m\e[48;5;190m  12% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    1/8 \e[0m\e[94m\e[13;110H\e[38;5;17m\e[48;5;190m : 21 \e[1;83H\e[34h\e[?25h\e[?25l\e[34h\e[?25h"
+  - delay: 457
+    content: "\e[?25l\e[26;1H\e[0m\e[94m:\e[34h\e[?25h"
+  - delay: 312
+    content: w
+  - delay: 88
+    content: q
+  - delay: 160
+    content: "\r\e[?25l\"vira_prompt\" 8L, 273C written"
+  - delay: 120
+    content: "\e[13;70H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[13;71H\e[38;5;85m\e[48;5;234m /tmp/vira_prompt   \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[14;59H\e[K\e[15;59H\e[93m~                                                        \e[16;59H~                                                        \e[17;59H~                                                        \e[18;59H~                                                        \e[19;59H~                                                        \e[20;59H~                                                        \e[21;59H~                                                        \e[22;59H~                                                        \e[23;59H~                                                        \e[24;59H~                                                        \e[0m\e[94m\e[25;90H\e[38;5;239m\e[48;5;236m \e[0m\e[94m\e[38;5;236m\e[48;5;236m\e[0m\e[94m\e[25;92H\e[38;5;235m\e[48;5;236m\e[0m\e[94m\e[25;93H\e[38;5;234m\e[48;5;235m\e[0m\e[94m\e[25;95H\e[38;5;239m\e[48;5;234m100% ☰    0/1\e]0;vira_report (/tmp) - VIM\a"
+  - delay: 94
+    content: "\e[0m\e[94m\e[26;1H\e[K"
+  - delay: 30
+    content: "\e[1;59H\e[34m┌\e[1;60H─\e[1;61H─\e[1;62H─\e[1;63H─\e[1;64H─\e[1;65H─\e[1;66H─\e[1;67H─\e[1;68H─\e[1;69H─\e[1;70H─\e[1;71H─\e[1;72H─\e[1;73H─\e[1;74H─\e[1;75H─\e[1;76H─\e[1;77H─\e[1;78H─\e[1;79H─\e[1;80H─\e[1;81H─\e[1;82H─\e[1;83H─\e[1;84H─\e[1;85H─\e[1;86H─\e[1;87H─\e[1;88H─\e[1;89H─\e[1;90H─\e[1;91H─\e[1;92H─\e[1;93H┐\e[2;59H│\e[0m\e[94m\e[2;60H\e[91m            VIRA-210             \e[0m\e[94m\e[34m│\e[0m\e[94m\e[2;94H\e[K\e[3;59H\e[34m├\e[3;60H─\e[3;61H─\e[3;62H─\e[3;63H─\e[3;64H─\e[3;65H─\e[3;66H─\e[3;67H─\e[3;68H─\e[3;69H─\e[3;70H─\e[3;71H─\e[3;72H─\e[3;73H─\e[3;74H┬\e[3;75H─\e[3;76H─\e[3;77H─\e[3;78H─\e[3;79H─\e[3;80H─\e[3;81H─\e[3;82H─\e[3;83H─\e[3;84H─\e[3;85H─\e[3;86H─\e[3;87H─\e[3;88H─\e[3;89H─\e[3;90H─\e[3;91H─\e[3;92H─\e[3;93H┤\e[0m\e[94m\e[3;94H\e[K\e[4;59H\e[34m│\e[4;60H      Created │\e[4;75H \e[0m\e[94m\e[93m2020-06-26 22:46\e[0m\e[94m\e[34m │\e[0m\e[94m\e[4;94H\e[K\e[5;59H\e[34m│\e[5;60H      Updated │\e[5;75H \e[0m\e[94m\e[93m2020-06-26 22:46\e[0m\e[94m\e[34m │\e[6;59H│\e[6;60H         Type │\e[0m\e[94m\e[6;75H \e[34mTask\e[0m\e[94m             \e[34m│\e[0m\e[94m\e[6;94H\e[K\e[7;59H\e[34m│\e[7;60H       Status │\e[0m\e[94m\e[7;76H\e[97m\e[48;5;242mTo Do\e[0m\e[94m\e[12C\e[34m│\e[8;59H│\e[8;60H Story Points │\e[0m\e[94m\e[8;75H None             \e[34m│\e[0m\e[94m\e[8;94H\e[K\e[9;59H\e[34m│\e[9;60H     Priority │\e[0m\e[94m\e[9;75H \e[91mHigh\e[0m\e[94m\e[13C\e[34m│\e[10;59H│\e[10;60H    Component │\e[10;93H│\e[11;59H│\e[11;60H      Version │\e[0m\e[94m\e[11;75H                  \e[34m│\e[0m\e[94m\e[11;94H\e[K\e[12;59H\e[34m│\e[12;60H     Assignee │\e[0m\e[94m\e[12;75H \e[32mUnassigned     \e[0m\e[94m  \e[34m│\e[0m\e[94m\e[12;94H\e[K\e[13;59H\e[34m│\e[13;60H     Reporter │\e[0m\e[94m\e[13;75H \e[32mMike Boiko     \e[0m\e[94m  \e[34m│\e[0m\e[94m\e[13;94H\e[K\e[14;59H\e[34m└\e[14;60H─\e[14;61H─\e[14;62H─\e[14;63H─\e[14;64H─\e[14;65H─\e[14;66H─\e[14;67H─\e[14;68H─\e[14;69H─\e[14;70H─\e[14;71H─\e[14;72H─"
+  - delay: 13
+    content: "\e[14;73H─\e[14;74H┴\e[14;75H─\e[14;76H─\e[14;77H─\e[14;78H─\e[14;79H─\e[14;80H─\e[14;81H─\e[14;82H─\e[14;83H─\e[14;84H─\e[14;85H─\e[14;86H─\e[14;87H─\e[14;88H─\e[14;89H─\e[14;90H─\e[14;91H─\e[14;92H─\e[14;93H┘\e[0m\e[94m\e[15;59H\e[91mSummary\e[0m\e[94m\e[15;66H\e[K\e[16;59HVira showcase\e[16;72H\e[K\e[17;59H\e[K\e[18;59H\e[91mDescription\e[0m\e[94m\e[18;70H\e[K\e[19;59Hhello world\e[19;70H\e[K\e[20;59H\e[K\e[21;59H\e[91mComments\e[0m\e[94m\e[21;67H\e[K\e[22;59H\e[34mMike Boiko \e[0m\e[94m\e[32m@ 2020-06-26 22:46 {{{2\e[0m\e[94m\e[22;93H\e[K\e[23;59HSeems to work perfect!\e[23;81H\e[K\e[24;59H\e[32m}}}\e[0m\e[94m\e[24;62H\e[K\e[25;59H\e[38;5;17m\e[48;5;190m VIRA-210 \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;70H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;71H\e[38;5;85m\e[48;5;234m /tmp/vira_report  \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;91H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;92H\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;93H\e[38;5;17m\e[48;5;190m   4% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    1/24 \e[0m\e[94m\e[25;110H\e[38;5;17m\e[48;5;190m :  1 \e[1;59H\e[34h\e[?25h"
+  - delay: 742
+    content: "\e[25;96H8\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m2\e[2;59H"
+  - delay: 496
+    content: "\e[0m\e[94m\e[25;95H\e[38;5;17m\e[48;5;190m12\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m3\e[3;59H"
+  - delay: 184
+    content: "\e[0m\e[94m\e[25;96H\e[38;5;17m\e[48;5;190m6\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m4\e[4;59H"
+  - delay: 184
+    content: "\e[0m\e[94m\e[25;95H\e[38;5;17m\e[48;5;190m20\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m5\e[5;59H"
+  - delay: 3032
+    content: "\e[0m\e[94m\e[25;96H\e[38;5;17m\e[48;5;190m5\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m6\e[6;59H"
+  - delay: 1496
+    content: "\e[0m\e[94m\e[25;96H\e[38;5;17m\e[48;5;190m9\e[0m\e[94m\e[7C\e[1m\e[38;5;17m\e[48;5;190m7\e[7;59H"
+  - delay: 304
+    content: "\e[?25l"
+  - delay: 91
+    content: "\e[0m\e[94m\e[17;1H\e[38;5;239m\e[48;5;236m /tmp/                          \e[0m\e[94m\e[38;5;236m\e[48;5;236m\e[0m\e[94m\e[17;34H\e[38;5;235m\e[48;5;236m\e[0m\e[94m\e[17;35H\e[38;5;234m\e[48;5;235m\e[0m\e[94m\e[17;36H\e[38;5;239m\e[48;5;234m 100% ☰    0/1 \e[17;52H :  1 \e[0m\e[94m\e[1m\e[7m\e[93m\e[40m \e[0m\e[94m\e[1;59H\e[34m├\e[1;74H┬\e[1;93H┤\e[2;60H      Created │\e[2;75H \e[0m\e[94m\e[93m2020-06-26 22:46\e[0m\e[94m\e[34m \e[3;59H│\e[3;60H      Updated │\e[3;75H \e[0m\e[94m\e[93m2020-06-26 22:46\e[0m\e[94m\e[34m │\e[4;66H   Type\e[0m\e[94m\e[2C \e[34mTask\e[0m\e[94m             \e[5;66H\e[34m Status\e[0m\e[94m\e[2C \e[97m\e[48;5;242mTo Do\e[0m\e[94m            \e[6;61H\e[34mStory Points\e[0m\e[94m\e[3CNone\e[7;65H\e[34mPriority\e[0m\e[94m\e[3C\e[91mHigh\e[0m\e[94m \e[8;61H\e[34m   Component\e[0m\e[94m\e[3C    \e[9;65H\e[34m Version\e[0m\e[94m\e[3C    \e[10;64H\e[34m Assignee\e[0m\e[94m\e[3C\e[32mUnassigned     \e[0m\e[94m\e[11;65H\e[34mReporter\e[0m\e[94m\e[3C\e[32mMike Boiko     \e[0m\e[94m\e[12;59H\e[34m└\e[12;60H─\e[12;61H─\e[12;62H─\e[12;63H─\e[12;64H─\e[12;65H─\e[12;66H─\e[12;67H─\e[12;68H─\e[12;69H─\e[12;70H─\e[12;71H─\e[12;72H─\e[12;73H─\e[12;74H┴\e[12;75H─\e[12;76H─\e[12;77H─\e[12;78H─\e[12;79H─\e[12;80H─\e[12;81H─\e[12;82H─\e[12;83H─\e[12;84H─\e[12;85H─\e[12;86H─\e[12;87H─\e[12;88H─\e[12;89H─\e[12;90H─\e[12;91H─\e[12;92H─\e[12;93H┘\e[0m\e[94m\e[13;59H\e[91mSummary\e[0m\e[94m\e[13;66H\e[K\e[14;59HVira showcase\e[14;72H\e[K\e[15;59H\e[K\e[16;59H\e[91mDescription\e[0m\e[94m\e[16;70H\e[K\e[17;59H\e[38;5;239m\e[48;5;236m /tmp/vira_report              \e[0m\e[94m\e[38;5;236m\e[48;5;236m\e[0m\e[94m\e[17;91H\e[38;5;235m\e[48;5;236m\e[0m\e[94m\e[17;92H\e[38;5;234m\e[48;5;235m\e[0m\e[94m\e[17;93H\e[38;5;239m\e[48;5;234m  29% ☰    7/24 \e[17;110H :  1 \e[0m\e[94m\e[18;1H\e[92m\e[40m  1 \e[0m\e[94m\e[18;5H\e[K\e[19;58H\e[93m                                                          \e[20;58H                                                          \e[21;58H                                                          \e[22;58H                                                          "
+  - delay: 11
+    content: "\e[23;58H                                                          \e[24;58H                                                          \e[0m\e[94m\e[25;1H\e[38;5;17m\e[48;5;190m VIRA-210 \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;12H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;13H\e[38;5;85m\e[48;5;234m /tmp/vira_menu                                          \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;72H\e[38;5;85m\e[48;5;234mvira_menu \e[0m\e[94m\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;83H\e[38;5;255m\e[48;5;238m [unix] \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;92H\e[38;5;17m\e[48;5;190m 100% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    0/1 \e[0m\e[94m\e[25;108H\e[38;5;17m\e[48;5;190m :  1\e[0m\e[94m\e[1C\e[38;5;166m\e[48;5;190m\e[0m\e[94m\e[25;115H\e[38;5;160m\e[48;5;166m\e]0;vira_menu (/tmp) - VIM\a"
+  - delay: 8
+    content: "\a\e[0m\e[94m\e[19;1H\e[92m\e[40m  2 \e[0m\e[94m\e[19;5H\e[K\e[20;1H\e[92m\e[40m  3 \e[0m\e[94mIn Progress\e[20;16H\e[K\e[21;1H\e[92m\e[40m  4 \e[0m\e[94mTo Do\e[21;10H\e[K\e[22;1H\e[92m\e[40m  5 \e[0m\e[94mDone\e[22;9H\e[K\e[23;1H\e[92m\e[40m  6 \e[0m\e[94mBacklog\e[23;12H\e[K\e[24;1H\e[92m\e[40m  7 \e[0m\e[94mSelected for Development\e[24;29H\e[K\e[25;103H\e[1m\e[38;5;17m\e[48;5;190m7/7\e[0m\e[94m\e[5C\e[38;5;17m\e[48;5;190m24\e[0m\e[94m\r\nThis field can not be changed."
+  - delay: 9
+    content: "\e[18;5HIn Progress\e[19;5HTo Do\e[20;5HDone\e[20;9H\e[K\e[21;5HBacklog\e[22;5HSelected for Development\r\n\e[93m~                                                                                                                  \e[24;1H~                                                                                                                  \e[0m\e[94m\e[25;93H\e[38;5;17m\e[48;5;190m 2\e[0m\e[94m\e[8C\e[1m\e[38;5;17m\e[48;5;190m1/5\e[0m\e[94m\e[5C\e[38;5;17m\e[48;5;190m 1\e[18;5H\e[34h\e[?25h"
+  - delay: 849
+    content: "\e[25;94H4\e[0m\e[94m\e[8C\e[1m\e[38;5;17m\e[48;5;190m2\e[19;5H"
+  - delay: 152
+    content: "\e[0m\e[94m\e[25;94H\e[38;5;17m\e[48;5;190m6\e[0m\e[94m\e[8C\e[1m\e[38;5;17m\e[48;5;190m3\e[20;5H"
+  - delay: 608
+    content: "\e[?25l\e[34h\e[?25h\e[?25l\e[34h\e[?25h\e[?25l\e[0m\e[94m\e[17;58H\e[93m\e[103m|\e[18;58H|\e[19;58H|\e[20;58H|\e[21;58H|\e[22;58H|\e[23;58H|\e[24;58H|\e[0m\e[94m\e[17;1H\e[93m~                                                        \r\n~                                                        \r\n~                                                        \r\n~                                                        \r\n~                                                        \r\n~                                                        \e[0m\e[94m\r\n\r\n\r\n\e[38;5;239m\e[48;5;236m /tmp/                          \e[0m\e[94m\e[38;5;236m\e[48;5;236m\e[0m\e[94m\e[25;34H\e[38;5;235m\e[48;5;236m\e[0m\e[94m\e[25;35H\e[38;5;234m\e[48;5;235m\e[0m\e[94m\e[25;36H\e[38;5;239m\e[48;5;234m 100% ☰    0/1 \e[25;52H :  1 \e[0m\e[94m\e[1m\e[7m\e[93m\e[40m \e[0m\e[94m\e[1;59H\e[K\e[2;59H\e[93m~                                                        \e[3;59H~                                                        \e[4;59H~                                                        \e[5;59H~                                                        \e[6;59H~                                                        \e[7;59H~                                                        \e[8;59H~                                                        \e[9;59H~                                                        \e[10;59H~                                                        \e[11;59H~                                                        \e[12;59H~                                                        \e[13;59H~                                                        \e[14;59H~                                                        \e[15;59H~                                                        \e[16;59H~                                                        \e[17;59H~                                                        \e[18;59H~                                                        \e[19;59H~                                                        "
+  - delay: 11
+    content: "\e[20;59H~                                                        \e[21;59H~                                                        \e[22;59H~                                                        \e[23;59H~\e[24;59H~\e[0m\e[94m\e[25;59H\e[38;5;17m\e[48;5;190m VIRA-210 \e[0m\e[94m\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;70H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;72H\e[38;5;85m\e[48;5;234m/tmp/vira_report   \e[0m\e[94m\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;92H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;93H\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;94H\e[38;5;17m\e[48;5;190m 100% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    0/1 \e[0m\e[94m\e[25;111H\e[38;5;17m\e[48;5;190m:  1 \e]0;vira_report (/tmp) - VIM\a"
+  - delay: 86
+    content: "\e[0m\e[94m\e[26;1H\e[K\e[1;59H\e[34m┌\e[1;60H─\e[1;61H─\e[1;62H─\e[1;63H─\e[1;64H─\e[1;65H─\e[1;66H─\e[1;67H─\e[1;68H─\e[1;69H─\e[1;70H─\e[1;71H─\e[1;72H─\e[1;73H─\e[1;74H─\e[1;75H─\e[1;76H─\e[1;77H─\e[1;78H─\e[1;79H─\e[1;80H─\e[1;81H─\e[1;82H─\e[1;83H─\e[1;84H─\e[1;85H─\e[1;86H─\e[1;87H─\e[1;88H─\e[1;89H─\e[1;90H─\e[1;91H─\e[1;92H─\e[1;93H┐\e[2;59H│\e[0m\e[94m\e[2;60H\e[91m            VIRA-210             \e[0m\e[94m\e[34m│\e[0m\e[94m\e[2;94H\e[K\e[3;59H\e[34m├\e[3;60H─\e[3;61H─\e[3;62H─\e[3;63H─\e[3;64H─\e[3;65H─\e[3;66H─\e[3;67H─\e[3;68H─\e[3;69H─\e[3;70H─\e[3;71H─\e[3;72H─\e[3;73H─\e[3;74H┬\e[3;75H─\e[3;76H─\e[3;77H─\e[3;78H─\e[3;79H─\e[3;80H─\e[3;81H─\e[3;82H─\e[3;83H─\e[3;84H─\e[3;85H─\e[3;86H─\e[3;87H─\e[3;88H─\e[3;89H─\e[3;90H─\e[3;91H─\e[3;92H─\e[3;93H┤\e[0m\e[94m\e[3;94H\e[K\e[4;59H\e[34m│\e[4;60H      Created │\e[4;75H \e[0m\e[94m\e[93m2020-06-26 22:46\e[0m\e[94m\e[34m │\e[0m\e[94m\e[4;94H\e[K\e[5;59H\e[34m│\e[5;60H      Updated │\e[5;75H \e[0m\e[94m\e[93m2020-06-26 22:46\e[0m\e[94m\e[34m │\e[0m\e[94m\e[5;94H\e[K\e[6;59H\e[34m│\e[6;60H         Type │\e[0m\e[94m\e[6;75H \e[34mTask\e[0m\e[94m             \e[34m│\e[0m\e[94m\e[6;94H\e[K\e[7;59H\e[34m│\e[7;60H       Status │\e[0m\e[94m\e[7;75H \e[97m\e[42mDone\e[0m\e[94m             \e[34m│\e[0m\e[94m\e[7;94H\e[K\e[8;59H\e[34m│\e[8;60H Story Points │\e[0m\e[94m\e[8;75H None             \e[34m│\e[0m\e[94m\e[8;94H\e[K\e[9;59H\e[34m│\e[9;60H     Priority │\e[0m\e[94m\e[9;75H \e[91mHigh\e[0m\e[94m             \e[34m│\e[0m\e[94m\e[9;94H\e[K\e[10;59H\e[34m│\e[10;60H    Component │\e[0m\e[94m\e[10;75H                  \e[34m│\e[0m\e[94m\e[10;94H\e[K\e[11;59H\e[34m│\e[11;60H      Version │\e[0m\e[94m\e[11;75H                  \e[34m│\e[0m\e[94m\e[11;94H\e[K\e[12;59H\e[34m│\e[12;60H     Assignee │\e[0m\e[94m\e[12;75H \e[32mUnassigned     \e[0m\e[94m  \e[34m│\e[0m\e[94m\e[12;94H\e[K\e[13;59H\e[34m│\e[13;60H     Reporter │\e[0m\e[94m\e[13;75H \e[32mMike Boiko     \e[0m\e[94m  \e[34m│\e[0m\e[94m\e[13;94H\e[K\e[14;59H\e[34m└\e[14;60H─\e[14;61H─\e[14;62H─\e[14;63H─\e[14;64H─\e[14;65H─\e[14;66H─\e[14;67H─\e[14;68H─\e[14;69H─\e[14;70H─\e[14;71H─\e[14;72H─\e[14;73H─\e[14;74H┴\e[14;75H─\e[14;76H─\e[14;77H─\e[14;78H─\e[14;79H─\e[14;80H─\e[14;81H─\e[14;82H─\e[14;83H─\e[14;84H─\e[14;85H─\e[14;86H─\e[14;87H─\e[14;88H─\e[14;89H─\e[14;90H─\e[14;91H─\e[14;92H─\e[14;93H┘\e[0m\e[94m\e[14;94H\e[K\e[15;59H\e[91mSummary\e[0m\e[94m\e[15;66H\e[K\e[16;59HVira showcase\e[16;72H\e[K\e[17;59H\e[K\e[18;59H\e[91mDescription\e[0m\e[94m\e[18;70H\e[K\e[19;59Hhello world\e[19;70H\e[K\e[20;59H\e[K\e[21;59H\e[91mComments\e[0m\e[94m\e[21;67H\e[K\e[22;59H\e[34mMike Boiko \e[0m\e[94m\e[32m@ 2020-06-26 22:46 {{{2\e[0m\e[94m\e[22;93H\e[K\e[23;59HSeems to work perfect!\e[23;81H\e[K\e[24;59H\e[32m}}}\e[0m\e[94m\e[24;62H\e[K\e[25;90H\e[38;5;234m\e[48;5;234m\e[0m\e[94m\e[25;91H\e[38;5;238m\e[48;5;234m\e[0m\e[94m\e[25;92H\e[38;5;190m\e[48;5;238m\e[0m\e[94m\e[25;93H\e[38;5;17m\e[48;5;190m   4% \e[0m\e[94m\e[1m\e[38;5;17m\e[48;5;190m☰    1/24\e[1;59H\e[34h\e[?25h"
+  - delay: 1312
+    content: "\e[?25l\e[26;1H\e[0m\e[94m:\e[34h\e[?25h"
+  - delay: 248
+    content: "q\b"
+  - delay: 192
+    content: " \bqa"
+  - delay: 552
+    content: "\r"
+  - delay: 56
+    content: "\e[?25l\e]0;xps â\x9D\x90 local â\x97\x8F 2 shell\a\e[26;1H\e[K\e[26;1H\e[?1l\e>\e[34h\e[?25h\e[?1049l"
+  - delay: 6
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                  \r \r"
+  - delay: 69
+    content: "\ek~/vira\e\\"
+  - delay: 8
+    content: "\r\e[0m\e[27m\e[24m\e[J╭─\e[32mmike\e[39m\e[36m@\e[32mxps\e[39m \e[1m\e[34m~/vira\e[39m\e[0m  \r\n╰─\e[39m➤ \e[39m \e[K\e[?1h\e=\e[?2004h"
+  - delay: 1215
+    content: "\e[1m\e[31me\e[0m\e[39m"
+  - delay: 183
+    content: "\b\e[1m\e[31me\e[1m\e[31mx\e[0m\e[39m"
+  - delay: 112
+    content: "\b\b\e[1m\e[31me\e[1m\e[31mx\e[1m\e[31mi\e[0m\e[39m"
+  - delay: 95
+    content: "\b\b\b\e[0m\e[32me\e[0m\e[32mx\e[0m\e[32mi\e[32mt\e[39m"
+  - delay: 103
+    content: "\e[?1l\e>\e[?2004l\r\r\n\ekexit\e\\"
